@@ -147,7 +147,7 @@ ubuntu18-04                : ok=2    changed=1    unreachable=0    failed=0    s
 For some reason it failes on all RedHat based systems (RHEL, CentOS and Fedora) but not on Debian based (Debian and Ubuntu).
 Full debug log `test.log` obtained by `env ANSIBLE_LOG_PATH=test.log ANSIBLE_DEBUG=1 ansible-playbook -vvvv -K test.yml`.
 Debug log for only CentOS 8 host `test_centos8.log` obtained by `env ANSIBLE_LOG_PATH=test_centos8.log ANSIBLE_DEBUG=1 ansible-playbook -vvvv -K test.yml --limit centos8`.
-The deboug utput seems to show the prompt is seen on the stdout
+The debug output seems to show the prompt is seen on the stdout
 ```
 11936 1583235011.48993: stdout chunk (state=0):
 >>>[sudo via ansible, key=euxtwlkwnsbduyzuqhrndztatxspjtpq] password:<<<
