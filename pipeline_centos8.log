@@ -1,0 +1,1510 @@
+2020-03-03 14:15:06,279 p=12395 u=mark n=ansible |  12395 1583241306.27922: starting run
+2020-03-03 14:15:06,460 p=12395 u=mark n=ansible | ansible-playbook 2.9.3
+  config file = /home/mark/git/ansible-sudo-bug/ansible.cfg
+  configured module search path = ['/home/mark/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.6/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.6.8 (default, Nov 21 2019, 19:31:34) [GCC 8.3.1 20190507 (Red Hat 8.3.1-4)]
+2020-03-03 14:15:06,461 p=12395 u=mark n=ansible | Using /home/mark/git/ansible-sudo-bug/ansible.cfg as config file
+2020-03-03 14:15:08,603 p=12395 u=mark n=ansible |  12395 1583241308.60353: Added group all to inventory
+2020-03-03 14:15:08,604 p=12395 u=mark n=ansible |  12395 1583241308.60406: Added group ungrouped to inventory
+2020-03-03 14:15:08,604 p=12395 u=mark n=ansible |  12395 1583241308.60457: Group all now contains ungrouped
+2020-03-03 14:15:08,605 p=12395 u=mark n=ansible |  12395 1583241308.60492: Examining possible inventory source: /home/mark/git/ansible-sudo-bug/inventory
+2020-03-03 14:15:08,605 p=12395 u=mark n=ansible | setting up inventory plugins
+2020-03-03 14:15:08,609 p=12395 u=mark n=ansible |  12395 1583241308.60962: trying /usr/share/ansible/plugins/cache
+2020-03-03 14:15:08,610 p=12395 u=mark n=ansible |  12395 1583241308.60999: trying /usr/lib/python3.6/site-packages/ansible/plugins/cache
+2020-03-03 14:15:08,611 p=12395 u=mark n=ansible |  12395 1583241308.61152: Loading CacheModule 'memory' from /usr/lib/python3.6/site-packages/ansible/plugins/cache/memory.py (searched paths: /usr/share/ansible/plugins/cache:/usr/lib/python3.6/site-packages/ansible/plugins/cache)
+2020-03-03 14:15:08,612 p=12395 u=mark n=ansible |  12395 1583241308.61266: trying /usr/share/ansible/plugins/inventory
+2020-03-03 14:15:08,613 p=12395 u=mark n=ansible |  12395 1583241308.61303: trying /usr/lib/python3.6/site-packages/ansible/plugins/inventory
+2020-03-03 14:15:08,615 p=12395 u=mark n=ansible |  12395 1583241308.61563: Loading InventoryModule 'host_list' from /usr/lib/python3.6/site-packages/ansible/plugins/inventory/host_list.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/inventory:/usr/share/ansible/plugins/inventory)
+2020-03-03 14:15:08,618 p=12395 u=mark n=ansible |  12395 1583241308.61790: Loaded config def from plugin (inventory/script)
+2020-03-03 14:15:08,618 p=12395 u=mark n=ansible |  12395 1583241308.61822: Loading InventoryModule 'script' from /usr/lib/python3.6/site-packages/ansible/plugins/inventory/script.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/inventory:/usr/share/ansible/plugins/inventory)
+2020-03-03 14:15:08,619 p=12395 u=mark n=ansible |  12395 1583241308.61947: Loading InventoryModule 'auto' from /usr/lib/python3.6/site-packages/ansible/plugins/inventory/auto.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/inventory:/usr/share/ansible/plugins/inventory)
+2020-03-03 14:15:08,621 p=12395 u=mark n=ansible |  12395 1583241308.62132: Loaded config def from plugin (inventory/yaml)
+2020-03-03 14:15:08,621 p=12395 u=mark n=ansible |  12395 1583241308.62166: Loading InventoryModule 'yaml' from /usr/lib/python3.6/site-packages/ansible/plugins/inventory/yaml.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/inventory:/usr/share/ansible/plugins/inventory)
+2020-03-03 14:15:08,623 p=12395 u=mark n=ansible |  12395 1583241308.62350: Loading InventoryModule 'ini' from /usr/lib/python3.6/site-packages/ansible/plugins/inventory/ini.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/inventory:/usr/share/ansible/plugins/inventory)
+2020-03-03 14:15:08,625 p=12395 u=mark n=ansible |  12395 1583241308.62503: Loading InventoryModule 'toml' from /usr/lib/python3.6/site-packages/ansible/plugins/inventory/toml.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/inventory:/usr/share/ansible/plugins/inventory)
+2020-03-03 14:15:08,625 p=12395 u=mark n=ansible |  12395 1583241308.62541: Attempting to use plugin host_list (/usr/lib/python3.6/site-packages/ansible/plugins/inventory/host_list.py)
+2020-03-03 14:15:08,625 p=12395 u=mark n=ansible | host_list declined parsing /home/mark/git/ansible-sudo-bug/inventory as it did not pass its verify_file() method
+2020-03-03 14:15:08,626 p=12395 u=mark n=ansible |  12395 1583241308.62608: Attempting to use plugin script (/usr/lib/python3.6/site-packages/ansible/plugins/inventory/script.py)
+2020-03-03 14:15:08,626 p=12395 u=mark n=ansible | script declined parsing /home/mark/git/ansible-sudo-bug/inventory as it did not pass its verify_file() method
+2020-03-03 14:15:08,626 p=12395 u=mark n=ansible |  12395 1583241308.62687: Attempting to use plugin auto (/usr/lib/python3.6/site-packages/ansible/plugins/inventory/auto.py)
+2020-03-03 14:15:08,627 p=12395 u=mark n=ansible | auto declined parsing /home/mark/git/ansible-sudo-bug/inventory as it did not pass its verify_file() method
+2020-03-03 14:15:08,627 p=12395 u=mark n=ansible |  12395 1583241308.62743: Attempting to use plugin yaml (/usr/lib/python3.6/site-packages/ansible/plugins/inventory/yaml.py)
+2020-03-03 14:15:08,629 p=12395 u=mark n=ansible |  12395 1583241308.62971: Loading data from /home/mark/git/ansible-sudo-bug/inventory
+2020-03-03 14:15:08,631 p=12395 u=mark n=ansible |  12395 1583241308.63110: /home/mark/git/ansible-sudo-bug/inventory was not parsable by yaml
+2020-03-03 14:15:08,632 p=12395 u=mark n=ansible |  12395 1583241308.63212: Attempting to use plugin ini (/usr/lib/python3.6/site-packages/ansible/plugins/inventory/ini.py)
+2020-03-03 14:15:08,635 p=12395 u=mark n=ansible |  12395 1583241308.63541: Added group testservers to inventory
+2020-03-03 14:15:08,636 p=12395 u=mark n=ansible |  12395 1583241308.63618: set inventory_file for centos8
+2020-03-03 14:15:08,636 p=12395 u=mark n=ansible |  12395 1583241308.63663: set inventory_dir for centos8
+2020-03-03 14:15:08,637 p=12395 u=mark n=ansible |  12395 1583241308.63692: Added host centos8 to inventory
+2020-03-03 14:15:08,637 p=12395 u=mark n=ansible |  12395 1583241308.63720: Added host centos8 to group testservers
+2020-03-03 14:15:08,637 p=12395 u=mark n=ansible |  12395 1583241308.63777: set inventory_file for centos7
+2020-03-03 14:15:08,638 p=12395 u=mark n=ansible |  12395 1583241308.63810: set inventory_dir for centos7
+2020-03-03 14:15:08,638 p=12395 u=mark n=ansible |  12395 1583241308.63841: Added host centos7 to inventory
+2020-03-03 14:15:08,638 p=12395 u=mark n=ansible |  12395 1583241308.63870: Added host centos7 to group testservers
+2020-03-03 14:15:08,639 p=12395 u=mark n=ansible |  12395 1583241308.63913: set inventory_file for rhel8
+2020-03-03 14:15:08,639 p=12395 u=mark n=ansible |  12395 1583241308.63959: set inventory_dir for rhel8
+2020-03-03 14:15:08,640 p=12395 u=mark n=ansible |  12395 1583241308.63989: Added host rhel8 to inventory
+2020-03-03 14:15:08,640 p=12395 u=mark n=ansible |  12395 1583241308.64022: Added host rhel8 to group testservers
+2020-03-03 14:15:08,640 p=12395 u=mark n=ansible |  12395 1583241308.64081: set inventory_file for fedora31
+2020-03-03 14:15:08,641 p=12395 u=mark n=ansible |  12395 1583241308.64113: set inventory_dir for fedora31
+2020-03-03 14:15:08,641 p=12395 u=mark n=ansible |  12395 1583241308.64148: Added host fedora31 to inventory
+2020-03-03 14:15:08,641 p=12395 u=mark n=ansible |  12395 1583241308.64177: Added host fedora31 to group testservers
+2020-03-03 14:15:08,642 p=12395 u=mark n=ansible |  12395 1583241308.64223: set inventory_file for debian
+2020-03-03 14:15:08,642 p=12395 u=mark n=ansible |  12395 1583241308.64264: set inventory_dir for debian
+2020-03-03 14:15:08,643 p=12395 u=mark n=ansible |  12395 1583241308.64287: Added host debian to inventory
+2020-03-03 14:15:08,643 p=12395 u=mark n=ansible |  12395 1583241308.64314: Added host debian to group testservers
+2020-03-03 14:15:08,643 p=12395 u=mark n=ansible |  12395 1583241308.64368: set inventory_file for ubuntu16-04
+2020-03-03 14:15:08,644 p=12395 u=mark n=ansible |  12395 1583241308.64400: set inventory_dir for ubuntu16-04
+2020-03-03 14:15:08,644 p=12395 u=mark n=ansible |  12395 1583241308.64427: Added host ubuntu16-04 to inventory
+2020-03-03 14:15:08,644 p=12395 u=mark n=ansible |  12395 1583241308.64464: Added host ubuntu16-04 to group testservers
+2020-03-03 14:15:08,645 p=12395 u=mark n=ansible |  12395 1583241308.64518: set inventory_file for ubuntu18-04
+2020-03-03 14:15:08,645 p=12395 u=mark n=ansible |  12395 1583241308.64569: set inventory_dir for ubuntu18-04
+2020-03-03 14:15:08,646 p=12395 u=mark n=ansible |  12395 1583241308.64593: Added host ubuntu18-04 to inventory
+2020-03-03 14:15:08,646 p=12395 u=mark n=ansible |  12395 1583241308.64621: Added host ubuntu18-04 to group testservers
+2020-03-03 14:15:08,646 p=12395 u=mark n=ansible | Parsed /home/mark/git/ansible-sudo-bug/inventory inventory source with ini plugin
+2020-03-03 14:15:08,646 p=12395 u=mark n=ansible |  12395 1583241308.64682: Reconcile groups and hosts in inventory.
+2020-03-03 14:15:08,647 p=12395 u=mark n=ansible |  12395 1583241308.64719: Group all now contains testservers
+2020-03-03 14:15:08,647 p=12395 u=mark n=ansible |  12395 1583241308.64774: Loading CacheModule 'memory' from /usr/lib/python3.6/site-packages/ansible/plugins/cache/memory.py (searched paths: /usr/share/ansible/plugins/cache:/usr/lib/python3.6/site-packages/ansible/plugins/cache) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,674 p=12395 u=mark n=ansible |  12395 1583241308.67406: Loaded config def from plugin (connection/buildah)
+2020-03-03 14:15:08,674 p=12395 u=mark n=ansible |  12395 1583241308.67473: Loading Connection 'buildah' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/buildah.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,677 p=12395 u=mark n=ansible |  12395 1583241308.67779: Loaded config def from plugin (connection/chroot)
+2020-03-03 14:15:08,678 p=12395 u=mark n=ansible |  12395 1583241308.67823: Loading Connection 'chroot' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/chroot.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,689 p=12395 u=mark n=ansible |  12395 1583241308.68953: Loaded config def from plugin (connection/docker)
+2020-03-03 14:15:08,690 p=12395 u=mark n=ansible |  12395 1583241308.68993: Loading Connection 'docker' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/docker.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,691 p=12395 u=mark n=ansible |  12395 1583241308.69114: Loaded config def from plugin (connection/funcd)
+2020-03-03 14:15:08,717 p=12395 u=mark n=ansible |  12395 1583241308.71761: Loaded config def from plugin (connection/httpapi)
+2020-03-03 14:15:08,718 p=12395 u=mark n=ansible |  12395 1583241308.71797: Loading Connection 'httpapi' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/httpapi.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,719 p=12395 u=mark n=ansible |  12395 1583241308.71963: Loaded config def from plugin (connection/iocage)
+2020-03-03 14:15:08,719 p=12395 u=mark n=ansible |  12395 1583241308.71987: Loading Connection 'iocage' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/iocage.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,720 p=12395 u=mark n=ansible |  12395 1583241308.72062: Loaded config def from plugin (connection/jail)
+2020-03-03 14:15:08,720 p=12395 u=mark n=ansible |  12395 1583241308.72082: Loading Connection 'jail' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/jail.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,724 p=12395 u=mark n=ansible |  12395 1583241308.72457: Loaded config def from plugin (connection/kubectl)
+2020-03-03 14:15:08,724 p=12395 u=mark n=ansible |  12395 1583241308.72481: Loading Connection 'kubectl' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/kubectl.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,725 p=12395 u=mark n=ansible |  12395 1583241308.72574: Loaded config def from plugin (connection/libvirt_lxc)
+2020-03-03 14:15:08,726 p=12395 u=mark n=ansible |  12395 1583241308.72598: Loading Connection 'libvirt_lxc' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/libvirt_lxc.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,726 p=12395 u=mark n=ansible |  12395 1583241308.72672: Loading Connection 'local' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/local.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,728 p=12395 u=mark n=ansible |  12395 1583241308.72800: Loaded config def from plugin (connection/lxc)
+2020-03-03 14:15:08,728 p=12395 u=mark n=ansible |  12395 1583241308.72826: Loading Connection 'lxc' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/lxc.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,729 p=12395 u=mark n=ansible |  12395 1583241308.72932: Loaded config def from plugin (connection/lxd)
+2020-03-03 14:15:08,729 p=12395 u=mark n=ansible |  12395 1583241308.72963: Loading Connection 'lxd' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/lxd.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,733 p=12395 u=mark n=ansible |  12395 1583241308.73350: Loaded config def from plugin (connection/napalm)
+2020-03-03 14:15:08,733 p=12395 u=mark n=ansible |  12395 1583241308.73381: Loading Connection 'napalm' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/napalm.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,738 p=12395 u=mark n=ansible |  12395 1583241308.73795: Loaded config def from plugin (connection/netconf)
+2020-03-03 14:15:08,738 p=12395 u=mark n=ansible |  12395 1583241308.73821: Loading Connection 'netconf' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/netconf.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,744 p=12395 u=mark n=ansible |  12395 1583241308.74480: Loaded config def from plugin (connection/network_cli)
+2020-03-03 14:15:08,745 p=12395 u=mark n=ansible |  12395 1583241308.74513: Loading Connection 'network_cli' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/network_cli.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,748 p=12395 u=mark n=ansible |  12395 1583241308.74869: Loaded config def from plugin (connection/oc)
+2020-03-03 14:15:08,749 p=12395 u=mark n=ansible |  12395 1583241308.74902: Loading Connection 'oc' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/oc.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,752 p=12395 u=mark n=ansible |  12395 1583241308.75277: Loaded config def from plugin (connection/paramiko_ssh)
+2020-03-03 14:15:08,753 p=12395 u=mark n=ansible |  12395 1583241308.75302: Loading Connection 'paramiko_ssh' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/paramiko_ssh.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,789 p=12395 u=mark n=ansible |  12395 1583241308.78921: Loaded config def from plugin (connection/persistent)
+2020-03-03 14:15:08,789 p=12395 u=mark n=ansible |  12395 1583241308.78966: Loading Connection 'persistent' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/persistent.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,790 p=12395 u=mark n=ansible |  12395 1583241308.79080: Loaded config def from plugin (connection/podman)
+2020-03-03 14:15:08,791 p=12395 u=mark n=ansible |  12395 1583241308.79101: Loading Connection 'podman' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/podman.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,802 p=12395 u=mark n=ansible |  12395 1583241308.80187: Loaded config def from plugin (connection/psrp)
+2020-03-03 14:15:08,802 p=12395 u=mark n=ansible |  12395 1583241308.80218: Loading Connection 'psrp' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/psrp.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,803 p=12395 u=mark n=ansible |  12395 1583241308.80315: Loaded config def from plugin (connection/qubes)
+2020-03-03 14:15:08,803 p=12395 u=mark n=ansible |  12395 1583241308.80344: Loading Connection 'qubes' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/qubes.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,804 p=12395 u=mark n=ansible |  12395 1583241308.80446: Loading Connection 'saltstack' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/saltstack.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,812 p=12395 u=mark n=ansible |  12395 1583241308.81208: Loaded config def from plugin (connection/ssh)
+2020-03-03 14:15:08,812 p=12395 u=mark n=ansible |  12395 1583241308.81249: Loading Connection 'ssh' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,817 p=12395 u=mark n=ansible |  12395 1583241308.81692: Loaded config def from plugin (connection/vmware_tools)
+2020-03-03 14:15:08,817 p=12395 u=mark n=ansible |  12395 1583241308.81722: Loading Connection 'vmware_tools' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/vmware_tools.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,820 p=12395 u=mark n=ansible |  12395 1583241308.82082: Loaded config def from plugin (connection/winrm)
+2020-03-03 14:15:08,821 p=12395 u=mark n=ansible |  12395 1583241308.82108: Loading Connection 'winrm' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/winrm.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,822 p=12395 u=mark n=ansible |  12395 1583241308.82202: Loaded config def from plugin (connection/zone)
+2020-03-03 14:15:08,822 p=12395 u=mark n=ansible |  12395 1583241308.82223: Loading Connection 'zone' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/zone.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,824 p=12395 u=mark n=ansible |  12395 1583241308.82461: trying /usr/share/ansible/plugins/doc_fragments
+2020-03-03 14:15:08,824 p=12395 u=mark n=ansible |  12395 1583241308.82486: trying /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments
+2020-03-03 14:15:08,827 p=12395 u=mark n=ansible |  12395 1583241308.82714: Loading ModuleDocFragment 'shell_windows' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/shell_windows.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments)
+2020-03-03 14:15:08,828 p=12395 u=mark n=ansible |  12395 1583241308.82820: Loaded config def from plugin (shell/cmd)
+2020-03-03 14:15:08,828 p=12395 u=mark n=ansible |  12395 1583241308.82849: Loading ShellModule 'cmd' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/cmd.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,829 p=12395 u=mark n=ansible |  12395 1583241308.82951: Loading ModuleDocFragment 'shell_common' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/shell_common.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments)
+2020-03-03 14:15:08,831 p=12395 u=mark n=ansible |  12395 1583241308.83127: Loaded config def from plugin (shell/csh)
+2020-03-03 14:15:08,831 p=12395 u=mark n=ansible |  12395 1583241308.83154: Loading ShellModule 'csh' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/csh.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,832 p=12395 u=mark n=ansible |  12395 1583241308.83255: Loading ModuleDocFragment 'shell_common' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/shell_common.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,834 p=12395 u=mark n=ansible |  12395 1583241308.83402: Loaded config def from plugin (shell/fish)
+2020-03-03 14:15:08,834 p=12395 u=mark n=ansible |  12395 1583241308.83419: Loading ShellModule 'fish' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/fish.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,834 p=12395 u=mark n=ansible |  12395 1583241308.83459: Loading ModuleDocFragment 'shell_windows' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/shell_windows.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,835 p=12395 u=mark n=ansible |  12395 1583241308.83546: Loaded config def from plugin (shell/powershell)
+2020-03-03 14:15:08,835 p=12395 u=mark n=ansible |  12395 1583241308.83563: Loading ShellModule 'powershell' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/powershell.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,836 p=12395 u=mark n=ansible |  12395 1583241308.83596: Loading ModuleDocFragment 'shell_common' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/shell_common.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,837 p=12395 u=mark n=ansible |  12395 1583241308.83745: Loaded config def from plugin (shell/sh)
+2020-03-03 14:15:08,837 p=12395 u=mark n=ansible |  12395 1583241308.83764: Loading ShellModule 'sh' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/sh.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,841 p=12395 u=mark n=ansible |  12395 1583241308.84108: Loaded config def from plugin (become/doas)
+2020-03-03 14:15:08,841 p=12395 u=mark n=ansible |  12395 1583241308.84136: Loading BecomeModule 'doas' from /usr/lib/python3.6/site-packages/ansible/plugins/become/doas.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,843 p=12395 u=mark n=ansible |  12395 1583241308.84365: Loaded config def from plugin (become/dzdo)
+2020-03-03 14:15:08,843 p=12395 u=mark n=ansible |  12395 1583241308.84387: Loading BecomeModule 'dzdo' from /usr/lib/python3.6/site-packages/ansible/plugins/become/dzdo.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,844 p=12395 u=mark n=ansible |  12395 1583241308.84482: Loaded config def from plugin (become/enable)
+2020-03-03 14:15:08,845 p=12395 u=mark n=ansible |  12395 1583241308.84503: Loading BecomeModule 'enable' from /usr/lib/python3.6/site-packages/ansible/plugins/become/enable.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,847 p=12395 u=mark n=ansible |  12395 1583241308.84747: Loaded config def from plugin (become/ksu)
+2020-03-03 14:15:08,847 p=12395 u=mark n=ansible |  12395 1583241308.84788: Loading BecomeModule 'ksu' from /usr/lib/python3.6/site-packages/ansible/plugins/become/ksu.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,850 p=12395 u=mark n=ansible |  12395 1583241308.85010: Loaded config def from plugin (become/machinectl)
+2020-03-03 14:15:08,850 p=12395 u=mark n=ansible |  12395 1583241308.85039: Loading BecomeModule 'machinectl' from /usr/lib/python3.6/site-packages/ansible/plugins/become/machinectl.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,852 p=12395 u=mark n=ansible |  12395 1583241308.85273: Loaded config def from plugin (become/pbrun)
+2020-03-03 14:15:08,853 p=12395 u=mark n=ansible |  12395 1583241308.85298: Loading BecomeModule 'pbrun' from /usr/lib/python3.6/site-packages/ansible/plugins/become/pbrun.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,855 p=12395 u=mark n=ansible |  12395 1583241308.85530: Loaded config def from plugin (become/pfexec)
+2020-03-03 14:15:08,855 p=12395 u=mark n=ansible |  12395 1583241308.85552: Loading BecomeModule 'pfexec' from /usr/lib/python3.6/site-packages/ansible/plugins/become/pfexec.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,857 p=12395 u=mark n=ansible |  12395 1583241308.85709: Loaded config def from plugin (become/pmrun)
+2020-03-03 14:15:08,857 p=12395 u=mark n=ansible |  12395 1583241308.85738: Loading BecomeModule 'pmrun' from /usr/lib/python3.6/site-packages/ansible/plugins/become/pmrun.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,859 p=12395 u=mark n=ansible |  12395 1583241308.85917: Loaded config def from plugin (become/runas)
+2020-03-03 14:15:08,859 p=12395 u=mark n=ansible |  12395 1583241308.85948: Loading BecomeModule 'runas' from /usr/lib/python3.6/site-packages/ansible/plugins/become/runas.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,861 p=12395 u=mark n=ansible |  12395 1583241308.86163: Loaded config def from plugin (become/sesu)
+2020-03-03 14:15:08,861 p=12395 u=mark n=ansible |  12395 1583241308.86192: Loading BecomeModule 'sesu' from /usr/lib/python3.6/site-packages/ansible/plugins/become/sesu.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,864 p=12395 u=mark n=ansible |  12395 1583241308.86468: Loaded config def from plugin (become/su)
+2020-03-03 14:15:08,865 p=12395 u=mark n=ansible |  12395 1583241308.86495: Loading BecomeModule 'su' from /usr/lib/python3.6/site-packages/ansible/plugins/become/su.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,867 p=12395 u=mark n=ansible |  12395 1583241308.86700: Loaded config def from plugin (become/sudo)
+2020-03-03 14:15:08,867 p=12395 u=mark n=ansible |  12395 1583241308.86721: Loading BecomeModule 'sudo' from /usr/lib/python3.6/site-packages/ansible/plugins/become/sudo.py (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,867 p=12395 u=mark n=ansible |  12395 1583241308.86771: Loading data from /home/mark/git/ansible-sudo-bug/pipeline.yml
+2020-03-03 14:15:08,875 p=12395 u=mark n=ansible |  12395 1583241308.87507: trying /usr/share/ansible/plugins/action
+2020-03-03 14:15:08,875 p=12395 u=mark n=ansible |  12395 1583241308.87534: trying /usr/lib/python3.6/site-packages/ansible/plugins/action
+2020-03-03 14:15:08,878 p=12395 u=mark n=ansible |  12395 1583241308.87825: trying /usr/share/ansible/plugins/callback
+2020-03-03 14:15:08,878 p=12395 u=mark n=ansible |  12395 1583241308.87857: trying /usr/lib/python3.6/site-packages/ansible/plugins/callback
+2020-03-03 14:15:08,881 p=12395 u=mark n=ansible |  12395 1583241308.88102: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments)
+2020-03-03 14:15:08,883 p=12395 u=mark n=ansible |  12395 1583241308.88296: Loaded config def from plugin (callback/default)
+2020-03-03 14:15:08,883 p=12395 u=mark n=ansible |  12395 1583241308.88319: Loading CallbackModule 'default' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/default.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback)
+2020-03-03 14:15:08,883 p=12395 u=mark n=ansible | Loading callback plugin default of type stdout, v2.0 from /usr/lib/python3.6/site-packages/ansible/plugins/callback/default.py
+2020-03-03 14:15:08,885 p=12395 u=mark n=ansible |  12395 1583241308.88565: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,887 p=12395 u=mark n=ansible |  12395 1583241308.88770: Loaded config def from plugin (callback/actionable)
+2020-03-03 14:15:08,887 p=12395 u=mark n=ansible |  12395 1583241308.88794: Loading CallbackModule 'actionable' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/actionable.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,888 p=12395 u=mark n=ansible |  12395 1583241308.88865: Loading CallbackModule 'aws_resource_actions' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/aws_resource_actions.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,889 p=12395 u=mark n=ansible |  12395 1583241308.88983: Loaded config def from plugin (callback/cgroup_memory_recap)
+2020-03-03 14:15:08,890 p=12395 u=mark n=ansible |  12395 1583241308.89006: Loading CallbackModule 'cgroup_memory_recap' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/cgroup_memory_recap.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,894 p=12395 u=mark n=ansible |  12395 1583241308.89453: Loaded config def from plugin (callback/cgroup_perf_recap)
+2020-03-03 14:15:08,894 p=12395 u=mark n=ansible |  12395 1583241308.89486: Loading CallbackModule 'cgroup_perf_recap' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/cgroup_perf_recap.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,895 p=12395 u=mark n=ansible |  12395 1583241308.89584: Loading CallbackModule 'context_demo' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/context_demo.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,896 p=12395 u=mark n=ansible |  12395 1583241308.89672: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,898 p=12395 u=mark n=ansible |  12395 1583241308.89838: Loaded config def from plugin (callback/counter_enabled)
+2020-03-03 14:15:08,898 p=12395 u=mark n=ansible |  12395 1583241308.89856: Loading CallbackModule 'counter_enabled' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/counter_enabled.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,899 p=12395 u=mark n=ansible |  12395 1583241308.89921: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,900 p=12395 u=mark n=ansible |  12395 1583241308.90079: Loaded config def from plugin (callback/debug)
+2020-03-03 14:15:08,901 p=12395 u=mark n=ansible |  12395 1583241308.90096: Loading CallbackModule 'debug' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/debug.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,901 p=12395 u=mark n=ansible |  12395 1583241308.90109: Loading CallbackModule 'default' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/default.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,902 p=12395 u=mark n=ansible |  12395 1583241308.90207: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,903 p=12395 u=mark n=ansible |  12395 1583241308.90377: Loaded config def from plugin (callback/dense)
+2020-03-03 14:15:08,904 p=12395 u=mark n=ansible |  12395 1583241308.90398: Loading CallbackModule 'dense' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/dense.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,906 p=12395 u=mark n=ansible |  12395 1583241308.90602: Loaded config def from plugin (callback/foreman)
+2020-03-03 14:15:08,906 p=12395 u=mark n=ansible |  12395 1583241308.90622: Loading CallbackModule 'foreman' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/foreman.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,907 p=12395 u=mark n=ansible |  12395 1583241308.90701: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,908 p=12395 u=mark n=ansible |  12395 1583241308.90865: Loaded config def from plugin (callback/full_skip)
+2020-03-03 14:15:08,908 p=12395 u=mark n=ansible |  12395 1583241308.90884: Loading CallbackModule 'full_skip' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/full_skip.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,911 p=12395 u=mark n=ansible |  12395 1583241308.91121: Loaded config def from plugin (callback/grafana_annotations)
+2020-03-03 14:15:08,911 p=12395 u=mark n=ansible |  12395 1583241308.91154: Loading CallbackModule 'grafana_annotations' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/grafana_annotations.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,913 p=12395 u=mark n=ansible |  12395 1583241308.91356: Loaded config def from plugin (callback/hipchat)
+2020-03-03 14:15:08,913 p=12395 u=mark n=ansible |  12395 1583241308.91389: Loading CallbackModule 'hipchat' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/hipchat.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,915 p=12395 u=mark n=ansible |  12395 1583241308.91560: Loaded config def from plugin (callback/jabber)
+2020-03-03 14:15:08,915 p=12395 u=mark n=ansible |  12395 1583241308.91584: Loading CallbackModule 'jabber' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/jabber.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,916 p=12395 u=mark n=ansible |  12395 1583241308.91682: Loaded config def from plugin (callback/json)
+2020-03-03 14:15:08,917 p=12395 u=mark n=ansible |  12395 1583241308.91698: Loading CallbackModule 'json' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/json.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,919 p=12395 u=mark n=ansible |  12395 1583241308.91925: Loaded config def from plugin (callback/junit)
+2020-03-03 14:15:08,919 p=12395 u=mark n=ansible |  12395 1583241308.91952: Loading CallbackModule 'junit' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/junit.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,920 p=12395 u=mark n=ansible |  12395 1583241308.92045: Loaded config def from plugin (callback/log_plays)
+2020-03-03 14:15:08,920 p=12395 u=mark n=ansible |  12395 1583241308.92062: Loading CallbackModule 'log_plays' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/log_plays.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,922 p=12395 u=mark n=ansible |  12395 1583241308.92242: Loaded config def from plugin (callback/logdna)
+2020-03-03 14:15:08,922 p=12395 u=mark n=ansible |  12395 1583241308.92272: Loading CallbackModule 'logdna' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/logdna.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,925 p=12395 u=mark n=ansible |  12395 1583241308.92518: Loaded config def from plugin (callback/logentries)
+2020-03-03 14:15:08,925 p=12395 u=mark n=ansible |  12395 1583241308.92552: Loading CallbackModule 'logentries' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/logentries.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,927 p=12395 u=mark n=ansible |  12395 1583241308.92701: Loaded config def from plugin (callback/logstash)
+2020-03-03 14:15:08,927 p=12395 u=mark n=ansible |  12395 1583241308.92732: Loading CallbackModule 'logstash' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/logstash.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,931 p=12395 u=mark n=ansible |  12395 1583241308.93156: Loaded config def from plugin (callback/mail)
+2020-03-03 14:15:08,931 p=12395 u=mark n=ansible |  12395 1583241308.93185: Loading CallbackModule 'mail' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/mail.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,932 p=12395 u=mark n=ansible |  12395 1583241308.93258: Loading CallbackModule 'minimal' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/minimal.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,934 p=12395 u=mark n=ansible |  12395 1583241308.93445: Loaded config def from plugin (callback/nrdp)
+2020-03-03 14:15:08,934 p=12395 u=mark n=ansible |  12395 1583241308.93465: Loading CallbackModule 'nrdp' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/nrdp.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,935 p=12395 u=mark n=ansible |  12395 1583241308.93522: Loading CallbackModule 'null' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/null.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,935 p=12395 u=mark n=ansible |  12395 1583241308.93586: Loading CallbackModule 'oneline' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/oneline.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,936 p=12395 u=mark n=ansible |  12395 1583241308.93663: Loading CallbackModule 'osx_say' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/osx_say.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,937 p=12395 u=mark n=ansible |  12395 1583241308.93726: Loading CallbackModule 'profile_roles' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/profile_roles.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,938 p=12395 u=mark n=ansible |  12395 1583241308.93850: Loaded config def from plugin (callback/profile_tasks)
+2020-03-03 14:15:08,938 p=12395 u=mark n=ansible |  12395 1583241308.93870: Loading CallbackModule 'profile_tasks' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/profile_tasks.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,939 p=12395 u=mark n=ansible |  12395 1583241308.93946: Loading CallbackModule 'say' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/say.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,940 p=12395 u=mark n=ansible |  12395 1583241308.94061: Loaded config def from plugin (callback/selective)
+2020-03-03 14:15:08,940 p=12395 u=mark n=ansible |  12395 1583241308.94082: Loading CallbackModule 'selective' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/selective.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,941 p=12395 u=mark n=ansible |  12395 1583241308.94163: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,943 p=12395 u=mark n=ansible |  12395 1583241308.94323: Loaded config def from plugin (callback/skippy)
+2020-03-03 14:15:08,943 p=12395 u=mark n=ansible |  12395 1583241308.94348: Loading CallbackModule 'skippy' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/skippy.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,945 p=12395 u=mark n=ansible |  12395 1583241308.94520: Loaded config def from plugin (callback/slack)
+2020-03-03 14:15:08,945 p=12395 u=mark n=ansible |  12395 1583241308.94552: Loading CallbackModule 'slack' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/slack.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,946 p=12395 u=mark n=ansible |  12395 1583241308.94677: Loaded config def from plugin (callback/splunk)
+2020-03-03 14:15:08,947 p=12395 u=mark n=ansible |  12395 1583241308.94701: Loading CallbackModule 'splunk' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/splunk.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,948 p=12395 u=mark n=ansible |  12395 1583241308.94792: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,949 p=12395 u=mark n=ansible |  12395 1583241308.94984: Loaded config def from plugin (callback/stderr)
+2020-03-03 14:15:08,950 p=12395 u=mark n=ansible |  12395 1583241308.95007: Loading CallbackModule 'stderr' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/stderr.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,951 p=12395 u=mark n=ansible |  12395 1583241308.95108: Loaded config def from plugin (callback/sumologic)
+2020-03-03 14:15:08,951 p=12395 u=mark n=ansible |  12395 1583241308.95128: Loading CallbackModule 'sumologic' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/sumologic.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,953 p=12395 u=mark n=ansible |  12395 1583241308.95372: Loaded config def from plugin (callback/syslog_json)
+2020-03-03 14:15:08,954 p=12395 u=mark n=ansible |  12395 1583241308.95396: Loading CallbackModule 'syslog_json' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/syslog_json.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,954 p=12395 u=mark n=ansible |  12395 1583241308.95461: Loading CallbackModule 'timer' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/timer.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,955 p=12395 u=mark n=ansible |  12395 1583241308.95525: Loading CallbackModule 'tree' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/tree.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,956 p=12395 u=mark n=ansible |  12395 1583241308.95609: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,957 p=12395 u=mark n=ansible |  12395 1583241308.95778: Loaded config def from plugin (callback/unixy)
+2020-03-03 14:15:08,958 p=12395 u=mark n=ansible |  12395 1583241308.95803: Loading CallbackModule 'unixy' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/unixy.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,959 p=12395 u=mark n=ansible |  12395 1583241308.95931: Loading ModuleDocFragment 'default_callback' from /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments/default_callback.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/doc_fragments:/usr/share/ansible/plugins/doc_fragments) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,961 p=12395 u=mark n=ansible |  12395 1583241308.96139: Loaded config def from plugin (callback/yaml)
+2020-03-03 14:15:08,961 p=12395 u=mark n=ansible |  12395 1583241308.96185: Loading CallbackModule 'yaml' from /usr/lib/python3.6/site-packages/ansible/plugins/callback/yaml.py (searched paths: /usr/share/ansible/plugins/callback:/usr/lib/python3.6/site-packages/ansible/plugins/callback) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,962 p=12395 u=mark n=ansible | PLAYBOOK: pipeline.yml ******************************************************************************
+2020-03-03 14:15:08,962 p=12395 u=mark n=ansible | 1 plays in pipeline.yml
+2020-03-03 14:15:08,962 p=12395 u=mark n=ansible |  12395 1583241308.96272: in VariableManager get_vars()
+2020-03-03 14:15:08,965 p=12395 u=mark n=ansible |  12395 1583241308.96521: done with get_vars()
+2020-03-03 14:15:08,965 p=12395 u=mark n=ansible |  12395 1583241308.96558: in VariableManager get_vars()
+2020-03-03 14:15:08,965 p=12395 u=mark n=ansible |  12395 1583241308.96585: done with get_vars()
+2020-03-03 14:15:08,966 p=12395 u=mark n=ansible |  12395 1583241308.96622: in VariableManager get_vars()
+2020-03-03 14:15:08,966 p=12395 u=mark n=ansible |  12395 1583241308.96658: done with get_vars()
+2020-03-03 14:15:08,967 p=12395 u=mark n=ansible | PLAY [Test sudo bug] ********************************************************************************
+2020-03-03 14:15:08,972 p=12395 u=mark n=ansible |  12395 1583241308.97202: trying /usr/share/ansible/plugins/strategy
+2020-03-03 14:15:08,972 p=12395 u=mark n=ansible |  12395 1583241308.97231: trying /usr/lib/python3.6/site-packages/ansible/plugins/strategy
+2020-03-03 14:15:08,973 p=12395 u=mark n=ansible |  12395 1583241308.97299: Loading StrategyModule 'linear' from /usr/lib/python3.6/site-packages/ansible/plugins/strategy/linear.py (searched paths: /usr/share/ansible/plugins/strategy:/usr/lib/python3.6/site-packages/ansible/plugins/strategy)
+2020-03-03 14:15:08,973 p=12395 u=mark n=ansible |  12395 1583241308.97387: getting the remaining hosts for this loop
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97406: done getting the remaining hosts for this loop
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97424: building list of next tasks for hosts
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97442: getting the next task for host centos8
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97456: done getting next task for host centos8
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97469:  ^ task is: TASK: meta (flush_handlers)
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97480:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:08,974 p=12395 u=mark n=ansible |  12395 1583241308.97490: done building task lists
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97500: counting tasks in each state of execution
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97512: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97523: advancing hosts in ITERATING_TASKS
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97539: starting to advance hosts
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97550: getting the next task for host centos8
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97562: done getting next task for host centos8
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97573:  ^ task is: TASK: meta (flush_handlers)
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97584:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:08,975 p=12395 u=mark n=ansible |  12395 1583241308.97594: done advancing hosts to next task
+2020-03-03 14:15:08,976 p=12395 u=mark n=ansible |  12395 1583241308.97612: trying /usr/lib/python3.6/site-packages/ansible/plugins/action/__pycache__
+2020-03-03 14:15:08,978 p=12395 u=mark n=ansible | META: ran handlers
+2020-03-03 14:15:08,978 p=12395 u=mark n=ansible |  12395 1583241308.97859: done queuing things up, now waiting for results queue to drain
+2020-03-03 14:15:08,978 p=12395 u=mark n=ansible |  12395 1583241308.97873: results queue empty
+2020-03-03 14:15:08,978 p=12395 u=mark n=ansible |  12395 1583241308.97883: checking for any_errors_fatal
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97895: done checking for any_errors_fatal
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97905: checking for max_fail_percentage
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97915: done checking for max_fail_percentage
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97925: checking to see if all hosts have failed and the running result is not ok
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97944: done checking to see if all hosts have failed
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97955: getting the remaining hosts for this loop
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97966: done getting the remaining hosts for this loop
+2020-03-03 14:15:08,979 p=12395 u=mark n=ansible |  12395 1583241308.97984: building list of next tasks for hosts
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.97995: getting the next task for host centos8
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98008: done getting next task for host centos8
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98019:  ^ task is: TASK: Run id
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98032:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98048: done building task lists
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98057: counting tasks in each state of execution
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98069: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98083: advancing hosts in ITERATING_TASKS
+2020-03-03 14:15:08,980 p=12395 u=mark n=ansible |  12395 1583241308.98093: starting to advance hosts
+2020-03-03 14:15:08,981 p=12395 u=mark n=ansible |  12395 1583241308.98104: getting the next task for host centos8
+2020-03-03 14:15:08,981 p=12395 u=mark n=ansible |  12395 1583241308.98115: done getting next task for host centos8
+2020-03-03 14:15:08,981 p=12395 u=mark n=ansible |  12395 1583241308.98133:  ^ task is: TASK: Run id
+2020-03-03 14:15:08,981 p=12395 u=mark n=ansible |  12395 1583241308.98148:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:08,981 p=12395 u=mark n=ansible |  12395 1583241308.98158: done advancing hosts to next task
+2020-03-03 14:15:08,982 p=12395 u=mark n=ansible |  12395 1583241308.98225: Loading ActionModule 'command' from /usr/lib/python3.6/site-packages/ansible/plugins/action/command.py (searched paths: /usr/share/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action/__pycache__) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:08,982 p=12395 u=mark n=ansible |  12395 1583241308.98249: getting variables
+2020-03-03 14:15:08,982 p=12395 u=mark n=ansible |  12395 1583241308.98259: in VariableManager get_vars()
+2020-03-03 14:15:08,983 p=12395 u=mark n=ansible |  12395 1583241308.98293: Calling all_inventory to load vars for centos8
+2020-03-03 14:15:08,983 p=12395 u=mark n=ansible |  12395 1583241308.98308: Calling groups_inventory to load vars for centos8
+2020-03-03 14:15:08,983 p=12395 u=mark n=ansible |  12395 1583241308.98321: Calling all_plugins_inventory to load vars for centos8
+2020-03-03 14:15:08,984 p=12395 u=mark n=ansible |  12395 1583241308.98445: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py
+2020-03-03 14:15:08,984 p=12395 u=mark n=ansible |  12395 1583241308.98472: Calling all_plugins_play to load vars for centos8
+2020-03-03 14:15:08,985 p=12395 u=mark n=ansible |  12395 1583241308.98499: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,985 p=12395 u=mark n=ansible |  12395 1583241308.98520: Calling groups_plugins_inventory to load vars for centos8
+2020-03-03 14:15:08,985 p=12395 u=mark n=ansible |  12395 1583241308.98552: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,985 p=12395 u=mark n=ansible |  12395 1583241308.98574: Calling groups_plugins_play to load vars for centos8
+2020-03-03 14:15:08,986 p=12395 u=mark n=ansible |  12395 1583241308.98601: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,986 p=12395 u=mark n=ansible |  12395 1583241308.98649: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,987 p=12395 u=mark n=ansible |  12395 1583241308.98705: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:08,990 p=12395 u=mark n=ansible |  12395 1583241308.99021: done with get_vars()
+2020-03-03 14:15:08,990 p=12395 u=mark n=ansible |  12395 1583241308.99059: done getting variables
+2020-03-03 14:15:08,990 p=12395 u=mark n=ansible |  12395 1583241308.99076: sending task start callback, copying the task so we can template it temporarily
+2020-03-03 14:15:08,990 p=12395 u=mark n=ansible |  12395 1583241308.99086: done copying, going to template now
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible |  12395 1583241308.99098: done templating
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible |  12395 1583241308.99109: here goes the callback...
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible | TASK [Run id] ***************************************************************************************
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible | task path: /home/mark/git/ansible-sudo-bug/pipeline.yml:14
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible |  12395 1583241308.99156: sending task start callback
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible |  12395 1583241308.99171: entering _queue_task() for centos8/command
+2020-03-03 14:15:08,991 p=12395 u=mark n=ansible |  12395 1583241308.99184: Creating lock for command
+2020-03-03 14:15:08,995 p=12395 u=mark n=ansible |  12395 1583241308.99459: worker is 1 (out of 1 available)
+2020-03-03 14:15:08,995 p=12395 u=mark n=ansible |  12395 1583241308.99544: exiting _queue_task() for centos8/command
+2020-03-03 14:15:08,996 p=12395 u=mark n=ansible |  12395 1583241308.99605: done queuing things up, now waiting for results queue to drain
+2020-03-03 14:15:08,996 p=12395 u=mark n=ansible |  12395 1583241308.99619: waiting for pending results...
+2020-03-03 14:15:08,997 p=12402 u=mark n=ansible |  12402 1583241308.99699: running TaskExecutor() for centos8/TASK: Run id
+2020-03-03 14:15:08,999 p=12402 u=mark n=ansible |  12402 1583241308.99883: in run() - task 525400b2-cc5b-917c-1a09-00000000000e
+2020-03-03 14:15:09,000 p=12402 u=mark n=ansible |  12402 1583241308.99987: calling self._execute()
+2020-03-03 14:15:09,004 p=12402 u=mark n=ansible |  12402 1583241309.00470: trying /usr/share/ansible/plugins/connection
+2020-03-03 14:15:09,005 p=12402 u=mark n=ansible |  12402 1583241309.00517: trying /usr/lib/python3.6/site-packages/ansible/plugins/connection
+2020-03-03 14:15:09,007 p=12402 u=mark n=ansible |  12402 1583241309.00702: Loading Connection 'ssh' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/ssh.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/connection:/usr/share/ansible/plugins/connection) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:09,007 p=12402 u=mark n=ansible |  12402 1583241309.00773: trying /usr/lib/python3.6/site-packages/ansible/plugins/shell
+2020-03-03 14:15:09,008 p=12402 u=mark n=ansible |  12402 1583241309.00853: Loading ShellModule 'sh' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:09,009 p=12402 u=mark n=ansible |  12402 1583241309.00910: Loading ShellModule 'sh' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:09,010 p=12402 u=mark n=ansible |  12402 1583241309.00986: trying /usr/share/ansible/plugins/become
+2020-03-03 14:15:09,010 p=12402 u=mark n=ansible |  12402 1583241309.01024: trying /usr/lib/python3.6/site-packages/ansible/plugins/become
+2020-03-03 14:15:09,011 p=12402 u=mark n=ansible |  12402 1583241309.01135: Loading BecomeModule 'sudo' from /usr/lib/python3.6/site-packages/ansible/plugins/become/sudo.py (searched paths: /usr/share/ansible/plugins/become:/usr/lib/python3.6/site-packages/ansible/plugins/become) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:09,015 p=12402 u=mark n=ansible |  12402 1583241309.01545: Loading ActionModule 'command' from /usr/lib/python3.6/site-packages/ansible/plugins/action/command.py (searched paths: /usr/share/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action/__pycache__) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:09,016 p=12402 u=mark n=ansible |  12402 1583241309.01603: starting attempt loop
+2020-03-03 14:15:09,016 p=12402 u=mark n=ansible |  12402 1583241309.01655: running the handler
+2020-03-03 14:15:09,065 p=12402 u=mark n=ansible |  12402 1583241309.06533: trying /usr/share/ansible/plugins/modules
+2020-03-03 14:15:09,065 p=12402 u=mark n=ansible |  12402 1583241309.06568: trying /usr/lib/python3.6/site-packages/ansible/modules
+2020-03-03 14:15:09,066 p=12402 u=mark n=ansible |  12402 1583241309.06608: trying /usr/lib/python3.6/site-packages/ansible/modules/__pycache__
+2020-03-03 14:15:09,066 p=12402 u=mark n=ansible |  12402 1583241309.06631: trying /usr/lib/python3.6/site-packages/ansible/modules/cloud
+2020-03-03 14:15:09,066 p=12402 u=mark n=ansible |  12402 1583241309.06680: trying /usr/lib/python3.6/site-packages/ansible/modules/clustering
+2020-03-03 14:15:09,067 p=12402 u=mark n=ansible |  12402 1583241309.06711: trying /usr/lib/python3.6/site-packages/ansible/modules/commands
+2020-03-03 14:15:09,068 p=12402 u=mark n=ansible |  12402 1583241309.06795: ANSIBALLZ: Using lock for command
+2020-03-03 14:15:09,068 p=12402 u=mark n=ansible |  12402 1583241309.06814: ANSIBALLZ: Acquiring lock
+2020-03-03 14:15:09,068 p=12402 u=mark n=ansible |  12402 1583241309.06826: ANSIBALLZ: Lock acquired: 140656134178352
+2020-03-03 14:15:09,068 p=12402 u=mark n=ansible |  12402 1583241309.06853: ANSIBALLZ: Creating module
+2020-03-03 14:15:09,248 p=12402 u=mark n=ansible |  12402 1583241309.24799: ANSIBALLZ: Writing module into payload
+2020-03-03 14:15:09,249 p=12402 u=mark n=ansible |  12402 1583241309.24953: ANSIBALLZ: Writing module
+2020-03-03 14:15:09,249 p=12402 u=mark n=ansible |  12402 1583241309.24989: ANSIBALLZ: Renaming module
+2020-03-03 14:15:09,250 p=12402 u=mark n=ansible |  12402 1583241309.25014: ANSIBALLZ: Done creating module
+2020-03-03 14:15:09,250 p=12402 u=mark n=ansible | <centos8> Attempting python interpreter discovery
+2020-03-03 14:15:09,250 p=12402 u=mark n=ansible |  12402 1583241309.25082: _low_level_execute_command(): starting
+2020-03-03 14:15:09,251 p=12402 u=mark n=ansible |  12402 1583241309.25099: _low_level_execute_command(): executing: /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+2020-03-03 14:15:09,251 p=12402 u=mark n=ansible | <centos8> ESTABLISH SSH CONNECTION FOR USER: sudoall
+2020-03-03 14:15:09,252 p=12402 u=mark n=ansible | <centos8> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="sudoall"' -o ConnectTimeout=10 -o ControlPath=/home/mark/.ansible/cp/63fb7345ee centos8 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2020-03-03 14:15:09,264 p=12402 u=mark n=ansible |  12402 1583241309.26374: stderr chunk (state=2):
+>>>OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+<<<
+
+2020-03-03 14:15:09,264 p=12402 u=mark n=ansible |  12402 1583241309.26438: stderr chunk (state=3):
+>>>debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'
+debug2: match not found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'
+debug2: match found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+<<<
+
+2020-03-03 14:15:09,265 p=12402 u=mark n=ansible |  12402 1583241309.26506: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/mark/.ansible/cp/63fb7345ee" does not exist
+debug2: resolving "centos8" port 22
+<<<
+
+2020-03-03 14:15:09,266 p=12402 u=mark n=ansible |  12402 1583241309.26655: stderr chunk (state=3):
+>>>debug2: ssh_connect_direct
+debug1: Connecting to centos8 [10.80.80.135] port 22.
+<<<
+
+2020-03-03 14:15:09,267 p=12402 u=mark n=ansible |  12402 1583241309.26720: stderr chunk (state=3):
+>>>debug2: fd 4 setting O_NONBLOCK
+<<<
+
+2020-03-03 14:15:09,292 p=12402 u=mark n=ansible |  12402 1583241309.29259: stderr chunk (state=3):
+>>>debug1: fd 4 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 9975 ms remain after connect
+<<<
+
+2020-03-03 14:15:09,293 p=12402 u=mark n=ansible |  12402 1583241309.29294: stderr chunk (state=3):
+>>>debug1: identity file /home/mark/.ssh/id_rsa type 0
+debug1: identity file /home/mark/.ssh/id_rsa-cert type -1
+debug1: identity file /home/mark/.ssh/id_dsa type -1
+debug1: identity file /home/mark/.ssh/id_dsa-cert type -1
+<<<
+
+2020-03-03 14:15:09,293 p=12402 u=mark n=ansible |  12402 1583241309.29310: stderr chunk (state=3):
+>>>debug1: identity file /home/mark/.ssh/id_ecdsa type -1
+debug1: identity file /home/mark/.ssh/id_ecdsa-cert type -1
+debug1: identity file /home/mark/.ssh/id_ed25519 type -1
+debug1: identity file /home/mark/.ssh/id_ed25519-cert type -1
+debug1: identity file /home/mark/.ssh/id_xmss type -1
+debug1: identity file /home/mark/.ssh/id_xmss-cert type -1
+<<<
+
+2020-03-03 14:15:09,293 p=12402 u=mark n=ansible |  12402 1583241309.29330: stderr chunk (state=3):
+>>>debug1: Local version string SSH-2.0-OpenSSH_8.0
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.0
+debug1: match: OpenSSH_8.0 pat OpenSSH* compat 0x04000000
+debug2: fd 4 setting O_NONBLOCK
+debug1: Authenticating to centos8:22 as 'sudoall'
+<<<
+
+2020-03-03 14:15:09,293 p=12402 u=mark n=ansible |  12402 1583241309.29359: stderr chunk (state=3):
+>>>debug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"
+<<<
+
+2020-03-03 14:15:09,293 p=12402 u=mark n=ansible |  12402 1583241309.29373: stderr chunk (state=3):
+>>>debug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:13
+debug3: load_hostkeys: loaded 1 keys from centos8
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+<<<
+
+2020-03-03 14:15:09,293 p=12402 u=mark n=ansible |  12402 1583241309.29389: stderr chunk (state=3):
+>>>debug3: send packet: type 20
+debug1: SSH2_MSG_KEXINIT sent
+<<<
+
+2020-03-03 14:15:09,299 p=12402 u=mark n=ansible |  12402 1583241309.29887: stderr chunk (state=3):
+>>>debug3: receive packet: type 20
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: ciphers stoc: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: compression ctos: zlib@openssh.com,zlib,none
+debug2: compression stoc: zlib@openssh.com,zlib,none
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1
+debug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: ciphers stoc: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: compression ctos: none,zlib@openssh.com
+debug2: compression stoc: none,zlib@openssh.com
+<<<
+
+2020-03-03 14:15:09,299 p=12402 u=mark n=ansible |  12402 1583241309.29930: stderr chunk (state=3):
+>>>debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: aes256-gcm@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: client->server cipher: aes256-gcm@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: curve25519-sha256 need=32 dh_need=32
+debug1: kex: curve25519-sha256 need=32 dh_need=32
+<<<
+
+2020-03-03 14:15:09,304 p=12402 u=mark n=ansible |  12402 1583241309.30468: stderr chunk (state=3):
+>>>debug3: send packet: type 30
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+<<<
+
+2020-03-03 14:15:09,316 p=12402 u=mark n=ansible |  12402 1583241309.31599: stderr chunk (state=3):
+>>>debug3: receive packet: type 31
+<<<
+
+2020-03-03 14:15:09,316 p=12402 u=mark n=ansible |  12402 1583241309.31633: stderr chunk (state=3):
+>>>debug1: Server host key: ecdsa-sha2-nistp256 SHA256:izjL5DHkyIS+J6M7UxHHI+9i/F4vTaQkrHvRXGUfjsk
+debug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"
+<<<
+
+2020-03-03 14:15:09,316 p=12402 u=mark n=ansible |  12402 1583241309.31665: stderr chunk (state=3):
+>>>debug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:13
+debug3: load_hostkeys: loaded 1 keys from centos8
+debug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"
+<<<
+
+2020-03-03 14:15:09,317 p=12402 u=mark n=ansible |  12402 1583241309.31714: stderr chunk (state=3):
+>>>debug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:5
+debug3: load_hostkeys: loaded 1 keys from 10.80.80.135
+debug1: Host 'centos8' is known and matches the ECDSA host key.
+debug1: Found key in /home/mark/.ssh/known_hosts:13
+<<<
+
+2020-03-03 14:15:09,323 p=12402 u=mark n=ansible |  12402 1583241309.32303: stderr chunk (state=3):
+>>>debug3: send packet: type 21
+debug2: set_newkeys: mode 1
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+<<<
+
+2020-03-03 14:15:09,323 p=12402 u=mark n=ansible |  12402 1583241309.32340: stderr chunk (state=3):
+>>>debug3: receive packet: type 21
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey in after 4294967296 blocks
+debug1: Will attempt key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug1: Will attempt key: /home/mark/.ssh/id_dsa 
+debug1: Will attempt key: /home/mark/.ssh/id_ecdsa 
+debug1: Will attempt key: /home/mark/.ssh/id_ed25519 
+debug1: Will attempt key: /home/mark/.ssh/id_xmss 
+debug2: pubkey_prepare: done
+debug3: send packet: type 5
+debug3: receive packet: type 7
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>
+<<<
+
+2020-03-03 14:15:09,365 p=12402 u=mark n=ansible |  12402 1583241309.36557: stderr chunk (state=3):
+>>>debug3: receive packet: type 6
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug3: send packet: type 50
+<<<
+
+2020-03-03 14:15:09,376 p=12402 u=mark n=ansible |  12402 1583241309.37603: stderr chunk (state=3):
+>>>debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic,password
+debug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic,password
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup gssapi-with-mic
+debug3: remaining preferred: gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled gssapi-with-mic
+debug1: Next authentication method: gssapi-with-mic
+<<<
+
+2020-03-03 14:15:09,495 p=12402 u=mark n=ansible |  12402 1583241309.49496: stderr chunk (state=3):
+>>>debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KCM:)
+
+
+<<<
+
+2020-03-03 14:15:09,513 p=12402 u=mark n=ansible |  12402 1583241309.51278: stderr chunk (state=3):
+>>>debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KCM:)
+
+
+debug2: we did not send a packet, disable method
+debug3: authmethod_lookup gssapi-keyex
+debug3: remaining preferred: hostbased,publickey
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+<<<
+
+2020-03-03 14:15:09,513 p=12402 u=mark n=ansible |  12402 1583241309.51326: stderr chunk (state=3):
+>>>debug1: Offering public key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug3: send packet: type 50
+debug2: we sent a publickey packet, wait for reply
+<<<
+
+2020-03-03 14:15:09,520 p=12402 u=mark n=ansible |  12402 1583241309.51976: stderr chunk (state=3):
+>>>debug3: receive packet: type 60
+<<<
+
+2020-03-03 14:15:09,520 p=12402 u=mark n=ansible |  12402 1583241309.52032: stderr chunk (state=3):
+>>>debug1: Server accepts key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug3: sign_and_send_pubkey: RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug3: sign_and_send_pubkey: signing using rsa-sha2-256
+<<<
+
+2020-03-03 14:15:09,530 p=12402 u=mark n=ansible |  12402 1583241309.53063: stderr chunk (state=3):
+>>>debug3: send packet: type 50
+<<<
+
+2020-03-03 14:15:09,547 p=12402 u=mark n=ansible |  12402 1583241309.54759: stderr chunk (state=3):
+>>>debug3: receive packet: type 52
+debug1: Enabling compression at level 6.
+debug1: Authentication succeeded (publickey).
+Authenticated to centos8 ([10.80.80.135]:22).
+debug1: setting up multiplex master socket
+<<<
+
+2020-03-03 14:15:09,548 p=12402 u=mark n=ansible |  12402 1583241309.54810: stderr chunk (state=3):
+>>>debug3: muxserver_listen: temporary control path /home/mark/.ansible/cp/63fb7345ee.zh4hZv9dEZhEy28J
+debug2: fd 5 setting O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug1: channel 0: new [/home/mark/.ansible/cp/63fb7345ee]
+debug3: muxserver_listen: mux listener channel 0 fd 5
+debug2: fd 4 setting TCP_NODELAY
+debug3: ssh_packet_set_tos: set IP_TOS 0x20
+debug1: control_persist_detach: backgrounding master process
+<<<
+
+2020-03-03 14:15:09,548 p=12402 u=mark n=ansible |  12402 1583241309.54863: stderr chunk (state=3):
+>>>debug2: control_persist_detach: background process is 12407
+debug2: fd 5 setting O_NONBLOCK
+<<<
+
+2020-03-03 14:15:09,550 p=12402 u=mark n=ansible |  12402 1583241309.55003: stderr chunk (state=3):
+>>>debug1: forking to background
+debug1: Entering interactive session.
+debug1: pledge: id
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+debug1: multiplexing control connection
+<<<
+
+2020-03-03 14:15:09,550 p=12402 u=mark n=ansible |  12402 1583241309.55053: stderr chunk (state=3):
+>>>debug2: fd 6 setting O_NONBLOCK
+debug3: fd 6 is O_NONBLOCK
+debug1: channel 1: new [mux-control]
+debug3: channel_post_mux_listener: new mux channel 1 fd 6
+debug3: mux_master_read_cb: channel 1: hello sent
+debug2: set_control_persist_exit_time: cancel scheduled exit
+debug3: mux_master_read_cb: channel 1 packet type 0x00000001 len 4
+debug2: mux_master_process_hello: channel 1 slave version 4
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_master_read_cb: channel 1 packet type 0x10000004 len 4
+debug2: mux_master_process_alive_check: channel 1: alive check
+debug3: mux_client_request_alive: done pid = 12409
+debug3: mux_client_request_session: session request sent
+debug3: mux_master_read_cb: channel 1 packet type 0x10000002 len 458
+debug2: mux_master_process_new_session: channel 1: request tty 0, X 0, agent 0, subsys 0, term "xterm-256color", cmd "/bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'", env 1
+debug3: mux_master_process_new_session: got fds stdin 7, stdout 8, stderr 9
+debug2: fd 8 setting O_NONBLOCK
+debug2: fd 9 setting O_NONBLOCK
+debug1: channel 2: new [client-session]
+debug2: mux_master_process_new_session: channel_new: 2 linked to control channel 1
+debug2: channel 2: send open
+debug3: send packet: type 90
+<<<
+
+2020-03-03 14:15:09,767 p=12402 u=mark n=ansible |  12402 1583241309.76739: stderr chunk (state=3):
+>>>debug3: receive packet: type 80
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug3: receive packet: type 4
+debug1: Remote: /home/sudoall/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+<<<
+
+2020-03-03 14:15:09,808 p=12402 u=mark n=ansible |  12402 1583241309.80853: stderr chunk (state=3):
+>>>debug3: receive packet: type 4
+debug1: Remote: /home/sudoall/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug3: receive packet: type 91
+debug2: channel_input_open_confirmation: channel 2: callback start
+debug2: client_session2_setup: id 2
+debug1: Sending environment.
+debug1: Sending env LANG = en_US.UTF-8
+debug2: channel 2: request env confirm 0
+debug3: send packet: type 98
+debug1: Sending command: /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+debug2: channel 2: request exec confirm 1
+debug3: send packet: type 98
+<<<
+
+2020-03-03 14:15:09,809 p=12402 u=mark n=ansible |  12402 1583241309.80913: stderr chunk (state=3):
+>>>debug3: mux_session_confirm: sending success reply
+debug2: channel_input_open_confirmation: channel 2: callback done
+debug2: channel 2: open confirm rwindow 0 rmax 32768
+<<<
+
+2020-03-03 14:15:09,817 p=12402 u=mark n=ansible |  12402 1583241309.81732: stderr chunk (state=3):
+>>>debug2: channel 2: rcvd adjust 2097152
+debug3: receive packet: type 99
+debug2: channel_input_status_confirm: type 99 id 2
+debug2: exec request accepted on channel 2
+<<<
+
+2020-03-03 14:15:09,847 p=12402 u=mark n=ansible |  12402 1583241309.84673: stdout chunk (state=3):
+>>>PLATFORM
+<<<
+
+2020-03-03 14:15:09,848 p=12402 u=mark n=ansible |  12402 1583241309.84860: stdout chunk (state=3):
+>>>Linux
+<<<
+
+2020-03-03 14:15:09,849 p=12402 u=mark n=ansible |  12402 1583241309.84948: stdout chunk (state=3):
+>>>FOUND
+/usr/libexec/platform-python
+ENDFOUND
+<<<
+
+2020-03-03 14:15:09,851 p=12402 u=mark n=ansible |  12402 1583241309.85138: stderr chunk (state=3):
+>>>debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype exit-status reply 0
+debug3: mux_exit_message: channel 2: exit message, exitval 0
+debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype eow@openssh.com reply 0
+debug2: channel 2: rcvd eow
+debug2: channel 2: chan_shutdown_read (i0 o0 sock -1 wfd 7 efd 9 [write])
+debug2: channel 2: input open -> closed
+debug3: receive packet: type 96
+debug2: channel 2: rcvd eof
+debug2: channel 2: output open -> drain
+debug2: channel 2: obuf empty
+debug2: channel 2: chan_shutdown_write (i3 o1 sock -1 wfd 8 efd 9 [write])
+debug2: channel 2: output drain -> closed
+debug3: receive packet: type 97
+debug2: channel 2: rcvd close
+debug3: channel 2: will not send data after close
+debug2: channel 2: send close
+debug3: send packet: type 97
+debug2: channel 2: is dead
+debug2: channel 2: gc: notify user
+debug3: mux_master_session_cleanup_cb: entering for channel 2
+debug2: channel 1: rcvd close
+debug2: channel 1: output open -> drain
+debug2: channel 1: chan_shutdown_read (i0 o1 sock 6 wfd 6 efd -1 [closed])
+debug2: channel 1: input open -> closed
+debug2: channel 2: gc: user detached
+debug2: channel 2: is dead
+debug2: channel 2: garbage collecting
+debug1: channel 2: free: client-session, nchannels 3
+debug3: channel 2: status: The following connections are open:
+  #1 mux-control (t16 nr0 i3/0 o1/16 e[closed]/0 fd 6/6/-1 sock 6 cc -1)
+  #2 client-session (t4 r0 i3/0 o3/0 e[write]/0 fd -1/-1/9 sock -1 cc -1)
+
+<<<
+
+2020-03-03 14:15:09,852 p=12402 u=mark n=ansible |  12402 1583241309.85206: stderr chunk (state=3):
+>>>debug2: channel 1: obuf empty
+debug2: channel 1: chan_shutdown_write (i3 o1 sock 6 wfd 6 efd -1 [closed])
+debug2: channel 1: output drain -> closed
+debug2: channel 1: is dead (local)
+debug2: channel 1: gc: notify user
+debug3: mux_master_control_cleanup_cb: entering for channel 1
+debug2: channel 1: gc: user detached
+debug2: channel 1: is dead (local)
+debug2: channel 1: garbage collecting
+debug1: channel 1: free: mux-control, nchannels 2
+debug3: channel 1: status: The following connections are open:
+  #1 mux-control (t16 nr0 i3/0 o3/0 e[closed]/0 fd 6/6/-1 sock 6 cc -1)
+
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+
+2020-03-03 14:15:09,853 p=12402 u=mark n=ansible |  12402 1583241309.85289: stdout chunk (state=3):
+>>><<<
+
+2020-03-03 14:15:09,854 p=12402 u=mark n=ansible | <centos8> (0, b'PLATFORM\nLinux\nFOUND\n/usr/libexec/platform-python\nENDFOUND\n', b'OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0\r\ndebug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf\r\ndebug2: checking match for \'final all\' host centos8 originally centos8\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched \'final\'\r\ndebug2: match not found\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)\r\ndebug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config\r\ndebug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]\r\ndebug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]\r\ndebug1: configuration requests final Match pass\r\ndebug1: re-parsing configuration\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0\r\ndebug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf\r\ndebug2: checking match for \'final all\' host centos8 originally centos8\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched \'final\'\r\ndebug2: match found\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1\r\ndebug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config\r\ndebug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]\r\ndebug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]\r\ndebug1: auto-mux: Trying existing master\r\ndebug1: Control socket "/home/mark/.ansible/cp/63fb7345ee" does not exist\r\ndebug2: resolving "centos8" port 22\r\ndebug2: ssh_connect_direct\r\ndebug1: Connecting to centos8 [10.80.80.135] port 22.\r\ndebug2: fd 4 setting O_NONBLOCK\r\ndebug1: fd 4 clearing O_NONBLOCK\r\ndebug1: Connection established.\r\ndebug3: timeout: 9975 ms remain after connect\r\ndebug1: identity file /home/mark/.ssh/id_rsa type 0\r\ndebug1: identity file /home/mark/.ssh/id_rsa-cert type -1\r\ndebug1: identity file /home/mark/.ssh/id_dsa type -1\r\ndebug1: identity file /home/mark/.ssh/id_dsa-cert type -1\r\ndebug1: identity file /home/mark/.ssh/id_ecdsa type -1\r\ndebug1: identity file /home/mark/.ssh/id_ecdsa-cert type -1\r\ndebug1: identity file /home/mark/.ssh/id_ed25519 type -1\r\ndebug1: identity file /home/mark/.ssh/id_ed25519-cert type -1\r\ndebug1: identity file /home/mark/.ssh/id_xmss type -1\r\ndebug1: identity file /home/mark/.ssh/id_xmss-cert type -1\r\ndebug1: Local version string SSH-2.0-OpenSSH_8.0\r\ndebug1: Remote protocol version 2.0, remote software version OpenSSH_8.0\r\ndebug1: match: OpenSSH_8.0 pat OpenSSH* compat 0x04000000\r\ndebug2: fd 4 setting O_NONBLOCK\r\ndebug1: Authenticating to centos8:22 as \'sudoall\'\r\ndebug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"\r\ndebug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:13\r\ndebug3: load_hostkeys: loaded 1 keys from centos8\r\ndebug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521\r\ndebug3: send packet: type 20\r\ndebug1: SSH2_MSG_KEXINIT sent\r\ndebug3: receive packet: type 20\r\ndebug1: SSH2_MSG_KEXINIT received\r\ndebug2: local client KEXINIT proposal\r\ndebug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,ext-info-c\r\ndebug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa\r\ndebug2: ciphers ctos: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc\r\ndebug2: ciphers stoc: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc\r\ndebug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512\r\ndebug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512\r\ndebug2: compression ctos: zlib@openssh.com,zlib,none\r\ndebug2: compression stoc: zlib@openssh.com,zlib,none\r\ndebug2: languages ctos: \r\ndebug2: languages stoc: \r\ndebug2: first_kex_follows 0 \r\ndebug2: reserved 0 \r\ndebug2: peer server KEXINIT proposal\r\ndebug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1\r\ndebug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519\r\ndebug2: ciphers ctos: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc\r\ndebug2: ciphers stoc: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc\r\ndebug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512\r\ndebug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512\r\ndebug2: compression ctos: none,zlib@openssh.com\r\ndebug2: compression stoc: none,zlib@openssh.com\r\ndebug2: languages ctos: \r\ndebug2: languages stoc: \r\ndebug2: first_kex_follows 0 \r\ndebug2: reserved 0 \r\ndebug1: kex: algorithm: curve25519-sha256\r\ndebug1: kex: host key algorithm: ecdsa-sha2-nistp256\r\ndebug1: kex: server->client cipher: aes256-gcm@openssh.com MAC: <implicit> compression: zlib@openssh.com\r\ndebug1: kex: client->server cipher: aes256-gcm@openssh.com MAC: <implicit> compression: zlib@openssh.com\r\ndebug1: kex: curve25519-sha256 need=32 dh_need=32\r\ndebug1: kex: curve25519-sha256 need=32 dh_need=32\r\ndebug3: send packet: type 30\r\ndebug1: expecting SSH2_MSG_KEX_ECDH_REPLY\r\ndebug3: receive packet: type 31\r\ndebug1: Server host key: ecdsa-sha2-nistp256 SHA256:izjL5DHkyIS+J6M7UxHHI+9i/F4vTaQkrHvRXGUfjsk\r\ndebug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"\r\ndebug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:13\r\ndebug3: load_hostkeys: loaded 1 keys from centos8\r\ndebug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"\r\ndebug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:5\r\ndebug3: load_hostkeys: loaded 1 keys from 10.80.80.135\r\ndebug1: Host \'centos8\' is known and matches the ECDSA host key.\r\ndebug1: Found key in /home/mark/.ssh/known_hosts:13\r\ndebug3: send packet: type 21\r\ndebug2: set_newkeys: mode 1\r\ndebug1: rekey out after 4294967296 blocks\r\ndebug1: SSH2_MSG_NEWKEYS sent\r\ndebug1: expecting SSH2_MSG_NEWKEYS\r\ndebug3: receive packet: type 21\r\ndebug1: SSH2_MSG_NEWKEYS received\r\ndebug2: set_newkeys: mode 0\r\ndebug1: rekey in after 4294967296 blocks\r\ndebug1: Will attempt key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ\r\ndebug1: Will attempt key: /home/mark/.ssh/id_dsa \r\ndebug1: Will attempt key: /home/mark/.ssh/id_ecdsa \r\ndebug1: Will attempt key: /home/mark/.ssh/id_ed25519 \r\ndebug1: Will attempt key: /home/mark/.ssh/id_xmss \r\ndebug2: pubkey_prepare: done\r\ndebug3: send packet: type 5\r\ndebug3: receive packet: type 7\r\ndebug1: SSH2_MSG_EXT_INFO received\r\ndebug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>\r\ndebug3: receive packet: type 6\r\ndebug2: service_accept: ssh-userauth\r\ndebug1: SSH2_MSG_SERVICE_ACCEPT received\r\ndebug3: send packet: type 50\r\ndebug3: receive packet: type 51\r\ndebug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic,password\r\ndebug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic,password\r\ndebug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey\r\ndebug3: authmethod_lookup gssapi-with-mic\r\ndebug3: remaining preferred: gssapi-keyex,hostbased,publickey\r\ndebug3: authmethod_is_enabled gssapi-with-mic\r\ndebug1: Next authentication method: gssapi-with-mic\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KCM:)\n\n\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KCM:)\n\n\r\ndebug2: we did not send a packet, disable method\r\ndebug3: authmethod_lookup gssapi-keyex\r\ndebug3: remaining preferred: hostbased,publickey\r\ndebug3: authmethod_lookup publickey\r\ndebug3: remaining preferred: ,publickey\r\ndebug3: authmethod_is_enabled publickey\r\ndebug1: Next authentication method: publickey\r\ndebug1: Offering public key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ\r\ndebug3: send packet: type 50\r\ndebug2: we sent a publickey packet, wait for reply\r\ndebug3: receive packet: type 60\r\ndebug1: Server accepts key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ\r\ndebug3: sign_and_send_pubkey: RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ\r\ndebug3: sign_and_send_pubkey: signing using rsa-sha2-256\r\ndebug3: send packet: type 50\r\ndebug3: receive packet: type 52\r\ndebug1: Enabling compression at level 6.\r\ndebug1: Authentication succeeded (publickey).\r\nAuthenticated to centos8 ([10.80.80.135]:22).\r\ndebug1: setting up multiplex master socket\r\ndebug3: muxserver_listen: temporary control path /home/mark/.ansible/cp/63fb7345ee.zh4hZv9dEZhEy28J\r\ndebug2: fd 5 setting O_NONBLOCK\r\ndebug3: fd 5 is O_NONBLOCK\r\ndebug3: fd 5 is O_NONBLOCK\r\ndebug1: channel 0: new [/home/mark/.ansible/cp/63fb7345ee]\r\ndebug3: muxserver_listen: mux listener channel 0 fd 5\r\ndebug2: fd 4 setting TCP_NODELAY\r\ndebug3: ssh_packet_set_tos: set IP_TOS 0x20\r\ndebug1: control_persist_detach: backgrounding master process\r\ndebug2: control_persist_detach: background process is 12407\r\ndebug2: fd 5 setting O_NONBLOCK\r\ndebug1: forking to background\r\ndebug1: Entering interactive session.\r\ndebug1: pledge: id\r\ndebug2: set_control_persist_exit_time: schedule exit in 60 seconds\r\ndebug1: multiplexing control connection\r\ndebug2: fd 6 setting O_NONBLOCK\r\ndebug3: fd 6 is O_NONBLOCK\r\ndebug1: channel 1: new [mux-control]\r\ndebug3: channel_post_mux_listener: new mux channel 1 fd 6\r\ndebug3: mux_master_read_cb: channel 1: hello sent\r\ndebug2: set_control_persist_exit_time: cancel scheduled exit\r\ndebug3: mux_master_read_cb: channel 1 packet type 0x00000001 len 4\r\ndebug2: mux_master_process_hello: channel 1 slave version 4\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_master_read_cb: channel 1 packet type 0x10000004 len 4\r\ndebug2: mux_master_process_alive_check: channel 1: alive check\r\ndebug3: mux_client_request_alive: done pid = 12409\r\ndebug3: mux_client_request_session: session request sent\r\ndebug3: mux_master_read_cb: channel 1 packet type 0x10000002 len 458\r\ndebug2: mux_master_process_new_session: channel 1: request tty 0, X 0, agent 0, subsys 0, term "xterm-256color", cmd "/bin/sh -c \'echo PLATFORM; uname; echo FOUND; command -v \'"\'"\'/usr/bin/python\'"\'"\'; command -v \'"\'"\'python3.7\'"\'"\'; command -v \'"\'"\'python3.6\'"\'"\'; command -v \'"\'"\'python3.5\'"\'"\'; command -v \'"\'"\'python2.7\'"\'"\'; command -v \'"\'"\'python2.6\'"\'"\'; command -v \'"\'"\'/usr/libexec/platform-python\'"\'"\'; command -v \'"\'"\'/usr/bin/python3\'"\'"\'; command -v \'"\'"\'python\'"\'"\'; echo ENDFOUND && sleep 0\'", env 1\r\ndebug3: mux_master_process_new_session: got fds stdin 7, stdout 8, stderr 9\r\ndebug2: fd 8 setting O_NONBLOCK\r\ndebug2: fd 9 setting O_NONBLOCK\r\ndebug1: channel 2: new [client-session]\r\ndebug2: mux_master_process_new_session: channel_new: 2 linked to control channel 1\r\ndebug2: channel 2: send open\r\ndebug3: send packet: type 90\r\ndebug3: receive packet: type 80\r\ndebug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0\r\ndebug3: receive packet: type 4\r\ndebug1: Remote: /home/sudoall/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding\r\ndebug3: receive packet: type 4\r\ndebug1: Remote: /home/sudoall/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding\r\ndebug3: receive packet: type 91\r\ndebug2: channel_input_open_confirmation: channel 2: callback start\r\ndebug2: client_session2_setup: id 2\r\ndebug1: Sending environment.\r\ndebug1: Sending env LANG = en_US.UTF-8\r\ndebug2: channel 2: request env confirm 0\r\ndebug3: send packet: type 98\r\ndebug1: Sending command: /bin/sh -c \'echo PLATFORM; uname; echo FOUND; command -v \'"\'"\'/usr/bin/python\'"\'"\'; command -v \'"\'"\'python3.7\'"\'"\'; command -v \'"\'"\'python3.6\'"\'"\'; command -v \'"\'"\'python3.5\'"\'"\'; command -v \'"\'"\'python2.7\'"\'"\'; command -v \'"\'"\'python2.6\'"\'"\'; command -v \'"\'"\'/usr/libexec/platform-python\'"\'"\'; command -v \'"\'"\'/usr/bin/python3\'"\'"\'; command -v \'"\'"\'python\'"\'"\'; echo ENDFOUND && sleep 0\'\r\ndebug2: channel 2: request exec confirm 1\r\ndebug3: send packet: type 98\r\ndebug3: mux_session_confirm: sending success reply\r\ndebug2: channel_input_open_confirmation: channel 2: callback done\r\ndebug2: channel 2: open confirm rwindow 0 rmax 32768\r\ndebug2: channel 2: rcvd adjust 2097152\r\ndebug3: receive packet: type 99\r\ndebug2: channel_input_status_confirm: type 99 id 2\r\ndebug2: exec request accepted on channel 2\r\ndebug3: receive packet: type 98\r\ndebug1: client_input_channel_req: channel 2 rtype exit-status reply 0\r\ndebug3: mux_exit_message: channel 2: exit message, exitval 0\r\ndebug3: receive packet: type 98\r\ndebug1: client_input_channel_req: channel 2 rtype eow@openssh.com reply 0\r\ndebug2: channel 2: rcvd eow\r\ndebug2: channel 2: chan_shutdown_read (i0 o0 sock -1 wfd 7 efd 9 [write])\r\ndebug2: channel 2: input open -> closed\r\ndebug3: receive packet: type 96\r\ndebug2: channel 2: rcvd eof\r\ndebug2: channel 2: output open -> drain\r\ndebug2: channel 2: obuf empty\r\ndebug2: channel 2: chan_shutdown_write (i3 o1 sock -1 wfd 8 efd 9 [write])\r\ndebug2: channel 2: output drain -> closed\r\ndebug3: receive packet: type 97\r\ndebug2: channel 2: rcvd close\r\ndebug3: channel 2: will not send data after close\r\ndebug2: channel 2: send close\r\ndebug3: send packet: type 97\r\ndebug2: channel 2: is dead\r\ndebug2: channel 2: gc: notify user\r\ndebug3: mux_master_session_cleanup_cb: entering for channel 2\r\ndebug2: channel 1: rcvd close\r\ndebug2: channel 1: output open -> drain\r\ndebug2: channel 1: chan_shutdown_read (i0 o1 sock 6 wfd 6 efd -1 [closed])\r\ndebug2: channel 1: input open -> closed\r\ndebug2: channel 2: gc: user detached\r\ndebug2: channel 2: is dead\r\ndebug2: channel 2: garbage collecting\r\ndebug1: channel 2: free: client-session, nchannels 3\r\ndebug3: channel 2: status: The following connections are open:\r\n  #1 mux-control (t16 nr0 i3/0 o1/16 e[closed]/0 fd 6/6/-1 sock 6 cc -1)\r\n  #2 client-session (t4 r0 i3/0 o3/0 e[write]/0 fd -1/-1/9 sock -1 cc -1)\r\n\r\ndebug2: channel 1: obuf empty\r\ndebug2: channel 1: chan_shutdown_write (i3 o1 sock 6 wfd 6 efd -1 [closed])\r\ndebug2: channel 1: output drain -> closed\r\ndebug2: channel 1: is dead (local)\r\ndebug2: channel 1: gc: notify user\r\ndebug3: mux_master_control_cleanup_cb: entering for channel 1\r\ndebug2: channel 1: gc: user detached\r\ndebug2: channel 1: is dead (local)\r\ndebug2: channel 1: garbage collecting\r\ndebug1: channel 1: free: mux-control, nchannels 2\r\ndebug3: channel 1: status: The following connections are open:\r\n  #1 mux-control (t16 nr0 i3/0 o3/0 e[closed]/0 fd 6/6/-1 sock 6 cc -1)\r\n\r\ndebug2: set_control_persist_exit_time: schedule exit in 60 seconds\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+2020-03-03 14:15:09,856 p=12402 u=mark n=ansible |  12402 1583241309.85516: _low_level_execute_command() done: rc=0, stdout=PLATFORM
+Linux
+FOUND
+/usr/libexec/platform-python
+ENDFOUND
+, stderr=OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'
+debug2: match not found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'
+debug2: match found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/mark/.ansible/cp/63fb7345ee" does not exist
+debug2: resolving "centos8" port 22
+debug2: ssh_connect_direct
+debug1: Connecting to centos8 [10.80.80.135] port 22.
+debug2: fd 4 setting O_NONBLOCK
+debug1: fd 4 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 9975 ms remain after connect
+debug1: identity file /home/mark/.ssh/id_rsa type 0
+debug1: identity file /home/mark/.ssh/id_rsa-cert type -1
+debug1: identity file /home/mark/.ssh/id_dsa type -1
+debug1: identity file /home/mark/.ssh/id_dsa-cert type -1
+debug1: identity file /home/mark/.ssh/id_ecdsa type -1
+debug1: identity file /home/mark/.ssh/id_ecdsa-cert type -1
+debug1: identity file /home/mark/.ssh/id_ed25519 type -1
+debug1: identity file /home/mark/.ssh/id_ed25519-cert type -1
+debug1: identity file /home/mark/.ssh/id_xmss type -1
+debug1: identity file /home/mark/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.0
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.0
+debug1: match: OpenSSH_8.0 pat OpenSSH* compat 0x04000000
+debug2: fd 4 setting O_NONBLOCK
+debug1: Authenticating to centos8:22 as 'sudoall'
+debug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"
+debug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:13
+debug3: load_hostkeys: loaded 1 keys from centos8
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+debug3: send packet: type 20
+debug1: SSH2_MSG_KEXINIT sent
+debug3: receive packet: type 20
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: ciphers stoc: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: compression ctos: zlib@openssh.com,zlib,none
+debug2: compression stoc: zlib@openssh.com,zlib,none
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1
+debug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: ciphers stoc: aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc
+debug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512
+debug2: compression ctos: none,zlib@openssh.com
+debug2: compression stoc: none,zlib@openssh.com
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: aes256-gcm@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: client->server cipher: aes256-gcm@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: curve25519-sha256 need=32 dh_need=32
+debug1: kex: curve25519-sha256 need=32 dh_need=32
+debug3: send packet: type 30
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug3: receive packet: type 31
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:izjL5DHkyIS+J6M7UxHHI+9i/F4vTaQkrHvRXGUfjsk
+debug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"
+debug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:13
+debug3: load_hostkeys: loaded 1 keys from centos8
+debug3: hostkeys_foreach: reading file "/home/mark/.ssh/known_hosts"
+debug3: record_hostkey: found key type ECDSA in file /home/mark/.ssh/known_hosts:5
+debug3: load_hostkeys: loaded 1 keys from 10.80.80.135
+debug1: Host 'centos8' is known and matches the ECDSA host key.
+debug1: Found key in /home/mark/.ssh/known_hosts:13
+debug3: send packet: type 21
+debug2: set_newkeys: mode 1
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug3: receive packet: type 21
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey in after 4294967296 blocks
+debug1: Will attempt key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug1: Will attempt key: /home/mark/.ssh/id_dsa 
+debug1: Will attempt key: /home/mark/.ssh/id_ecdsa 
+debug1: Will attempt key: /home/mark/.ssh/id_ed25519 
+debug1: Will attempt key: /home/mark/.ssh/id_xmss 
+debug2: pubkey_prepare: done
+debug3: send packet: type 5
+debug3: receive packet: type 7
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>
+debug3: receive packet: type 6
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug3: send packet: type 50
+debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic,password
+debug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic,password
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup gssapi-with-mic
+debug3: remaining preferred: gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled gssapi-with-mic
+debug1: Next authentication method: gssapi-with-mic
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KCM:)
+
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KCM:)
+
+
+debug2: we did not send a packet, disable method
+debug3: authmethod_lookup gssapi-keyex
+debug3: remaining preferred: hostbased,publickey
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Offering public key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug3: send packet: type 50
+debug2: we sent a publickey packet, wait for reply
+debug3: receive packet: type 60
+debug1: Server accepts key: /home/mark/.ssh/id_rsa RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug3: sign_and_send_pubkey: RSA SHA256:aUPgboo2qcZ7/3oRAQls/UxXvd8kP+xi/72G/L4HSlQ
+debug3: sign_and_send_pubkey: signing using rsa-sha2-256
+debug3: send packet: type 50
+debug3: receive packet: type 52
+debug1: Enabling compression at level 6.
+debug1: Authentication succeeded (publickey).
+Authenticated to centos8 ([10.80.80.135]:22).
+debug1: setting up multiplex master socket
+debug3: muxserver_listen: temporary control path /home/mark/.ansible/cp/63fb7345ee.zh4hZv9dEZhEy28J
+debug2: fd 5 setting O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug1: channel 0: new [/home/mark/.ansible/cp/63fb7345ee]
+debug3: muxserver_listen: mux listener channel 0 fd 5
+debug2: fd 4 setting TCP_NODELAY
+debug3: ssh_packet_set_tos: set IP_TOS 0x20
+debug1: control_persist_detach: backgrounding master process
+debug2: control_persist_detach: background process is 12407
+debug2: fd 5 setting O_NONBLOCK
+debug1: forking to background
+debug1: Entering interactive session.
+debug1: pledge: id
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+debug1: multiplexing control connection
+debug2: fd 6 setting O_NONBLOCK
+debug3: fd 6 is O_NONBLOCK
+debug1: channel 1: new [mux-control]
+debug3: channel_post_mux_listener: new mux channel 1 fd 6
+debug3: mux_master_read_cb: channel 1: hello sent
+debug2: set_control_persist_exit_time: cancel scheduled exit
+debug3: mux_master_read_cb: channel 1 packet type 0x00000001 len 4
+debug2: mux_master_process_hello: channel 1 slave version 4
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_master_read_cb: channel 1 packet type 0x10000004 len 4
+debug2: mux_master_process_alive_check: channel 1: alive check
+debug3: mux_client_request_alive: done pid = 12409
+debug3: mux_client_request_session: session request sent
+debug3: mux_master_read_cb: channel 1 packet type 0x10000002 len 458
+debug2: mux_master_process_new_session: channel 1: request tty 0, X 0, agent 0, subsys 0, term "xterm-256color", cmd "/bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'", env 1
+debug3: mux_master_process_new_session: got fds stdin 7, stdout 8, stderr 9
+debug2: fd 8 setting O_NONBLOCK
+debug2: fd 9 setting O_NONBLOCK
+debug1: channel 2: new [client-session]
+debug2: mux_master_process_new_session: channel_new: 2 linked to control channel 1
+debug2: channel 2: send open
+debug3: send packet: type 90
+debug3: receive packet: type 80
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug3: receive packet: type 4
+debug1: Remote: /home/sudoall/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug3: receive packet: type 4
+debug1: Remote: /home/sudoall/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug3: receive packet: type 91
+debug2: channel_input_open_confirmation: channel 2: callback start
+debug2: client_session2_setup: id 2
+debug1: Sending environment.
+debug1: Sending env LANG = en_US.UTF-8
+debug2: channel 2: request env confirm 0
+debug3: send packet: type 98
+debug1: Sending command: /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
+debug2: channel 2: request exec confirm 1
+debug3: send packet: type 98
+debug3: mux_session_confirm: sending success reply
+debug2: channel_input_open_confirmation: channel 2: callback done
+debug2: channel 2: open confirm rwindow 0 rmax 32768
+debug2: channel 2: rcvd adjust 2097152
+debug3: receive packet: type 99
+debug2: channel_input_status_confirm: type 99 id 2
+debug2: exec request accepted on channel 2
+debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype exit-status reply 0
+debug3: mux_exit_message: channel 2: exit message, exitval 0
+debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype eow@openssh.com reply 0
+debug2: channel 2: rcvd eow
+debug2: channel 2: chan_shutdown_read (i0 o0 sock -1 wfd 7 efd 9 [write])
+debug2: channel 2: input open -> closed
+debug3: receive packet: type 96
+debug2: channel 2: rcvd eof
+debug2: channel 2: output open -> drain
+debug2: channel 2: obuf empty
+debug2: channel 2: chan_shutdown_write (i3 o1 sock -1 wfd 8 efd 9 [write])
+debug2: channel 2: output drain -> closed
+debug3: receive packet: type 97
+debug2: channel 2: rcvd close
+debug3: channel 2: will not send data after close
+debug2: channel 2: send close
+debug3: send packet: type 97
+debug2: channel 2: is dead
+debug2: channel 2: gc: notify user
+debug3: mux_master_session_cleanup_cb: entering for channel 2
+debug2: channel 1: rcvd close
+debug2: channel 1: output open -> drain
+debug2: channel 1: chan_shutdown_read (i0 o1 sock 6 wfd 6 efd -1 [closed])
+debug2: channel 1: input open -> closed
+debug2: channel 2: gc: user detached
+debug2: channel 2: is dead
+debug2: channel 2: garbage collecting
+debug1: channel 2: free: client-session, nchannels 3
+debug3: channel 2: status: The following connections are open:
+  #1 mux-control (t16 nr0 i3/0 o1/16 e[closed]/0 fd 6/6/-1 sock 6 cc -1)
+  #2 client-session (t4 r0 i3/0 o3/0 e[write]/0 fd -1/-1/9 sock -1 cc -1)
+
+debug2: channel 1: obuf empty
+debug2: channel 1: chan_shutdown_write (i3 o1 sock 6 wfd 6 efd -1 [closed])
+debug2: channel 1: output drain -> closed
+debug2: channel 1: is dead (local)
+debug2: channel 1: gc: notify user
+debug3: mux_master_control_cleanup_cb: entering for channel 1
+debug2: channel 1: gc: user detached
+debug2: channel 1: is dead (local)
+debug2: channel 1: garbage collecting
+debug1: channel 1: free: mux-control, nchannels 2
+debug3: channel 1: status: The following connections are open:
+  #1 mux-control (t16 nr0 i3/0 o3/0 e[closed]/0 fd 6/6/-1 sock 6 cc -1)
+
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+
+2020-03-03 14:15:09,857 p=12402 u=mark n=ansible |  12402 1583241309.85733 [centos8]: found interpreters: ['/usr/libexec/platform-python']
+2020-03-03 14:15:09,859 p=12402 u=mark n=ansible |  12402 1583241309.85898: _low_level_execute_command(): starting
+2020-03-03 14:15:09,859 p=12402 u=mark n=ansible |  12402 1583241309.85964: _low_level_execute_command(): executing: /bin/sh -c '/usr/libexec/platform-python && sleep 0'
+2020-03-03 14:15:09,860 p=12402 u=mark n=ansible | <centos8> ESTABLISH SSH CONNECTION FOR USER: sudoall
+2020-03-03 14:15:09,862 p=12402 u=mark n=ansible | <centos8> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="sudoall"' -o ConnectTimeout=10 -o ControlPath=/home/mark/.ansible/cp/63fb7345ee centos8 '/bin/sh -c '"'"'/usr/libexec/platform-python && sleep 0'"'"''
+2020-03-03 14:15:09,869 p=12402 u=mark n=ansible |  12402 1583241309.86914: Sending initial data
+2020-03-03 14:15:09,870 p=12402 u=mark n=ansible |  12402 1583241309.87015: Sent initial data (1234 bytes)
+2020-03-03 14:15:09,876 p=12402 u=mark n=ansible |  12402 1583241309.87609: stderr chunk (state=3):
+>>>OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+<<<
+
+2020-03-03 14:15:09,877 p=12402 u=mark n=ansible |  12402 1583241309.87688: stderr chunk (state=3):
+>>>debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'
+debug2: match not found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'
+debug2: match found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+<<<
+
+2020-03-03 14:15:09,877 p=12402 u=mark n=ansible |  12402 1583241309.87768: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 4 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 12409
+debug3: mux_client_request_session: session request sent
+<<<
+
+2020-03-03 14:15:09,951 p=12402 u=mark n=ansible |  12402 1583241309.95166: stdout chunk (state=3):
+>>>{"platform_dist_result": ["centos", "8.1.1911", "Core"], "osrelease_content": "NAME=\"CentOS Linux\"\nVERSION=\"8 (Core)\"\nID=\"centos\"\nID_LIKE=\"rhel fedora\"\nVERSION_ID=\"8\"\nPLATFORM_ID=\"platform:el8\"\nPRETTY_NAME=\"CentOS Linux 8 (Core)\"\nANSI_COLOR=\"0;31\"\nCPE_NAME=\"cpe:/o:centos:centos:8\"\nHOME_URL=\"https://www.centos.org/\"\nBUG_REPORT_URL=\"https://bugs.centos.org/\"\n\nCENTOS_MANTISBT_PROJECT=\"CentOS-8\"\nCENTOS_MANTISBT_PROJECT_VERSION=\"8\"\nREDHAT_SUPPORT_PRODUCT=\"centos\"\nREDHAT_SUPPORT_PRODUCT_VERSION=\"8\"\n\n"}
+<<<
+
+2020-03-03 14:15:09,953 p=12402 u=mark n=ansible |  12402 1583241309.95320: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+
+2020-03-03 14:15:09,954 p=12402 u=mark n=ansible |  12402 1583241309.95414: stderr chunk (state=3):
+>>><<<
+
+2020-03-03 14:15:09,954 p=12402 u=mark n=ansible |  12402 1583241309.95456: stdout chunk (state=3):
+>>><<<
+
+2020-03-03 14:15:09,955 p=12402 u=mark n=ansible | <centos8> (0, b'{"platform_dist_result": ["centos", "8.1.1911", "Core"], "osrelease_content": "NAME=\\"CentOS Linux\\"\\nVERSION=\\"8 (Core)\\"\\nID=\\"centos\\"\\nID_LIKE=\\"rhel fedora\\"\\nVERSION_ID=\\"8\\"\\nPLATFORM_ID=\\"platform:el8\\"\\nPRETTY_NAME=\\"CentOS Linux 8 (Core)\\"\\nANSI_COLOR=\\"0;31\\"\\nCPE_NAME=\\"cpe:/o:centos:centos:8\\"\\nHOME_URL=\\"https://www.centos.org/\\"\\nBUG_REPORT_URL=\\"https://bugs.centos.org/\\"\\n\\nCENTOS_MANTISBT_PROJECT=\\"CentOS-8\\"\\nCENTOS_MANTISBT_PROJECT_VERSION=\\"8\\"\\nREDHAT_SUPPORT_PRODUCT=\\"centos\\"\\nREDHAT_SUPPORT_PRODUCT_VERSION=\\"8\\"\\n\\n"}\n', b"OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0\r\ndebug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf\r\ndebug2: checking match for 'final all' host centos8 originally centos8\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'\r\ndebug2: match not found\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)\r\ndebug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config\r\ndebug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]\r\ndebug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]\r\ndebug1: configuration requests final Match pass\r\ndebug1: re-parsing configuration\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0\r\ndebug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf\r\ndebug2: checking match for 'final all' host centos8 originally centos8\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'\r\ndebug2: match found\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1\r\ndebug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config\r\ndebug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]\r\ndebug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 4 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 12409\r\ndebug3: mux_client_request_session: session request sent\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n")
+2020-03-03 14:15:09,955 p=12402 u=mark n=ansible |  12402 1583241309.95532: _low_level_execute_command() done: rc=0, stdout={"platform_dist_result": ["centos", "8.1.1911", "Core"], "osrelease_content": "NAME=\"CentOS Linux\"\nVERSION=\"8 (Core)\"\nID=\"centos\"\nID_LIKE=\"rhel fedora\"\nVERSION_ID=\"8\"\nPLATFORM_ID=\"platform:el8\"\nPRETTY_NAME=\"CentOS Linux 8 (Core)\"\nANSI_COLOR=\"0;31\"\nCPE_NAME=\"cpe:/o:centos:centos:8\"\nHOME_URL=\"https://www.centos.org/\"\nBUG_REPORT_URL=\"https://bugs.centos.org/\"\n\nCENTOS_MANTISBT_PROJECT=\"CentOS-8\"\nCENTOS_MANTISBT_PROJECT_VERSION=\"8\"\nREDHAT_SUPPORT_PRODUCT=\"centos\"\nREDHAT_SUPPORT_PRODUCT_VERSION=\"8\"\n\n"}
+, stderr=OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'
+debug2: match not found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'
+debug2: match found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: auto-mux: Trying existing master
+debug2: fd 4 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 12409
+debug3: mux_client_request_session: session request sent
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+
+2020-03-03 14:15:09,956 p=12402 u=mark n=ansible |  12402 1583241309.95666: ANSIBALLZ: using cached module: /home/mark/.ansible/tmp/ansible-local-12395fwk958ot/ansiballz_cache/command-ZIP_DEFLATED
+2020-03-03 14:15:09,957 p=12402 u=mark n=ansible | Using module file /usr/lib/python3.6/site-packages/ansible/modules/commands/command.py
+2020-03-03 14:15:09,957 p=12402 u=mark n=ansible | Pipelining is enabled.
+2020-03-03 14:15:09,958 p=12402 u=mark n=ansible |  12402 1583241309.95804: _low_level_execute_command(): starting
+2020-03-03 14:15:09,958 p=12402 u=mark n=ansible |  12402 1583241309.95824: _low_level_execute_command(): using become for this command
+2020-03-03 14:15:09,958 p=12402 u=mark n=ansible |  12402 1583241309.95863: _low_level_execute_command(): executing: /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=dpmhftramaljynvvxvvlpbqhhlxvqceb] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-dpmhftramaljynvvxvvlpbqhhlxvqceb ; /usr/libexec/platform-python'"'"' && sleep 0'
+2020-03-03 14:15:09,958 p=12402 u=mark n=ansible | <centos8> ESTABLISH SSH CONNECTION FOR USER: sudoall
+2020-03-03 14:15:09,959 p=12402 u=mark n=ansible | <centos8> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="sudoall"' -o ConnectTimeout=10 -o ControlPath=/home/mark/.ansible/cp/63fb7345ee centos8 '/bin/sh -c '"'"'sudo -H -S  -p "[sudo via ansible, key=dpmhftramaljynvvxvvlpbqhhlxvqceb] password:" -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-dpmhftramaljynvvxvvlpbqhhlxvqceb ; /usr/libexec/platform-python'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2020-03-03 14:15:09,964 p=12402 u=mark n=ansible |  12402 1583241309.96383: Initial state: awaiting_prompt: [sudo via ansible, key=dpmhftramaljynvvxvvlpbqhhlxvqceb] password:
+2020-03-03 14:15:09,969 p=12402 u=mark n=ansible |  12402 1583241309.96945: stderr chunk (state=0):
+>>>OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+<<<
+
+2020-03-03 14:15:09,971 p=12402 u=mark n=ansible |  12402 1583241309.97103: stderr chunk (state=0):
+>>>debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'
+debug2: match not found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'
+debug2: match found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: auto-mux: Trying existing master
+debug2: fd 4 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 12409
+debug3: mux_client_request_session: session request sent
+<<<
+
+2020-03-03 14:15:10,018 p=12402 u=mark n=ansible |  12402 1583241310.01812: stderr chunk (state=0):
+>>>[sudo via ansible, key=dpmhftramaljynvvxvvlpbqhhlxvqceb] password:<<<
+
+2020-03-03 14:15:10,018 p=12402 u=mark n=ansible |  12402 1583241310.01868: become_prompt: (source=stderr, state=awaiting_prompt): '[sudo via ansible, key=dpmhftramaljynvvxvvlpbqhhlxvqceb] password:'
+2020-03-03 14:15:10,019 p=12402 u=mark n=ansible |  12402 1583241310.01896: Sending become_password in response to prompt
+2020-03-03 14:15:10,041 p=12402 u=mark n=ansible |  12402 1583241310.04153: stdout chunk (state=1):
+>>>BECOME-SUCCESS-dpmhftramaljynvvxvvlpbqhhlxvqceb
+<<<
+
+2020-03-03 14:15:10,042 p=12402 u=mark n=ansible |  12402 1583241310.04207: become_success: (source=stdout, state=awaiting_escalation): 'BECOME-SUCCESS-dpmhftramaljynvvxvvlpbqhhlxvqceb'
+2020-03-03 14:15:10,042 p=12402 u=mark n=ansible | Escalation succeeded
+2020-03-03 14:15:10,042 p=12402 u=mark n=ansible |  12402 1583241310.04279: Sending initial data
+2020-03-03 14:15:10,045 p=12402 u=mark n=ansible |  12402 1583241310.04551: Sent initial data (107816 bytes)
+2020-03-03 14:15:10,239 p=12402 u=mark n=ansible |  12402 1583241310.23967: stdout chunk (state=3):
+>>>
+{"cmd": ["id"], "stdout": "uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023", "stderr": "", "rc": 0, "start": "2020-03-03 14:15:10.217936", "end": "2020-03-03 14:15:10.222304", "delta": "0:00:00.004368", "changed": true, "invocation": {"module_args": {"_raw_params": "id", "warn": true, "_uses_shell": false, "stdin_add_newline": true, "strip_empty_ends": true, "argv": null, "chdir": null, "executable": null, "creates": null, "removes": null, "stdin": null}}}
+<<<
+
+2020-03-03 14:15:10,243 p=12402 u=mark n=ansible |  12402 1583241310.24289: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+
+2020-03-03 14:15:10,243 p=12402 u=mark n=ansible |  12402 1583241310.24369: stderr chunk (state=3):
+>>><<<
+
+2020-03-03 14:15:10,244 p=12402 u=mark n=ansible |  12402 1583241310.24407: stdout chunk (state=3):
+>>><<<
+
+2020-03-03 14:15:10,244 p=12402 u=mark n=ansible | <centos8> (0, b'\n{"cmd": ["id"], "stdout": "uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023", "stderr": "", "rc": 0, "start": "2020-03-03 14:15:10.217936", "end": "2020-03-03 14:15:10.222304", "delta": "0:00:00.004368", "changed": true, "invocation": {"module_args": {"_raw_params": "id", "warn": true, "_uses_shell": false, "stdin_add_newline": true, "strip_empty_ends": true, "argv": null, "chdir": null, "executable": null, "creates": null, "removes": null, "stdin": null}}}\n', b"OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0\r\ndebug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf\r\ndebug2: checking match for 'final all' host centos8 originally centos8\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'\r\ndebug2: match not found\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)\r\ndebug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config\r\ndebug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]\r\ndebug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]\r\ndebug1: configuration requests final Match pass\r\ndebug1: re-parsing configuration\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0\r\ndebug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf\r\ndebug2: checking match for 'final all' host centos8 originally centos8\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'\r\ndebug2: match found\r\ndebug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1\r\ndebug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config\r\ndebug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]\r\ndebug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 4 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 12409\r\ndebug3: mux_client_request_session: session request sent\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n")
+2020-03-03 14:15:10,245 p=12402 u=mark n=ansible |  12402 1583241310.24511: _low_level_execute_command() done: rc=0, stdout=
+{"cmd": ["id"], "stdout": "uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023", "stderr": "", "rc": 0, "start": "2020-03-03 14:15:10.217936", "end": "2020-03-03 14:15:10.222304", "delta": "0:00:00.004368", "changed": true, "invocation": {"module_args": {"_raw_params": "id", "warn": true, "_uses_shell": false, "stdin_add_newline": true, "strip_empty_ends": true, "argv": null, "chdir": null, "executable": null, "creates": null, "removes": null, "stdin": null}}}
+, stderr=OpenSSH_8.0p1, OpenSSL 1.1.1c FIPS  28 May 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: not matched 'final'
+debug2: match not found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1 (parse only)
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 51: Including file /etc/ssh/ssh_config.d/05-redhat.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug2: checking match for 'final all' host centos8 originally centos8
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 3: matched 'final'
+debug2: match found
+debug3: /etc/ssh/ssh_config.d/05-redhat.conf line 5: Including file /etc/crypto-policies/back-ends/openssh.config depth 1
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug3: gss kex names ok: [gss-gex-sha1-,gss-group14-sha1-]
+debug3: kex names ok: [curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1]
+debug1: auto-mux: Trying existing master
+debug2: fd 4 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 12409
+debug3: mux_client_request_session: session request sent
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+
+2020-03-03 14:15:10,247 p=12402 u=mark n=ansible |  12402 1583241310.24768: done with _execute_module (command, {'_raw_params': 'id', 'warn': True, '_ansible_check_mode': False, '_ansible_no_log': False, '_ansible_debug': True, '_ansible_diff': False, '_ansible_verbosity': 4, '_ansible_version': '2.9.3', '_ansible_module_name': 'command', '_ansible_syslog_facility': 'LOG_USER', '_ansible_selinux_special_fs': ['fuse', 'nfs', 'vboxsf', 'ramfs', '9p', 'vfat'], '_ansible_string_conversion_action': 'warn', '_ansible_socket': None, '_ansible_shell_executable': '/bin/sh', '_ansible_keep_remote_files': False, '_ansible_tmpdir': None, '_ansible_remote_tmp': '~/.ansible/tmp'})
+2020-03-03 14:15:10,248 p=12402 u=mark n=ansible |  12402 1583241310.24810: handler run complete
+2020-03-03 14:15:10,254 p=12402 u=mark n=ansible |  12402 1583241310.25408: attempt loop complete, returning result
+2020-03-03 14:15:10,254 p=12402 u=mark n=ansible |  12402 1583241310.25457: _execute() done
+2020-03-03 14:15:10,255 p=12402 u=mark n=ansible |  12402 1583241310.25486: dumping result to json
+2020-03-03 14:15:10,255 p=12402 u=mark n=ansible |  12402 1583241310.25532: done dumping result, returning
+2020-03-03 14:15:10,256 p=12402 u=mark n=ansible |  12402 1583241310.25591: done running TaskExecutor() for centos8/TASK: Run id [525400b2-cc5b-917c-1a09-00000000000e]
+2020-03-03 14:15:10,256 p=12402 u=mark n=ansible |  12402 1583241310.25665: sending task result for task 525400b2-cc5b-917c-1a09-00000000000e
+2020-03-03 14:15:10,257 p=12402 u=mark n=ansible |  12402 1583241310.25759: done sending task result for task 525400b2-cc5b-917c-1a09-00000000000e
+2020-03-03 14:15:10,258 p=12402 u=mark n=ansible |  12402 1583241310.25794: WORKER PROCESS EXITING
+2020-03-03 14:15:10,265 p=12395 u=mark n=ansible | changed: [centos8] => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "cmd": [
+        "id"
+    ],
+    "delta": "0:00:00.004368",
+    "end": "2020-03-03 14:15:10.222304",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "id",
+            "_uses_shell": false,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-03-03 14:15:10.217936",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023",
+    "stdout_lines": [
+        "uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+    ]
+}
+2020-03-03 14:15:10,265 p=12395 u=mark n=ansible |  12395 1583241310.26555: no more pending results, returning what we have
+2020-03-03 14:15:10,266 p=12395 u=mark n=ansible |  12395 1583241310.26589: results queue empty
+2020-03-03 14:15:10,266 p=12395 u=mark n=ansible |  12395 1583241310.26614: checking for any_errors_fatal
+2020-03-03 14:15:10,266 p=12395 u=mark n=ansible |  12395 1583241310.26654: done checking for any_errors_fatal
+2020-03-03 14:15:10,266 p=12395 u=mark n=ansible |  12395 1583241310.26679: checking for max_fail_percentage
+2020-03-03 14:15:10,267 p=12395 u=mark n=ansible |  12395 1583241310.26708: done checking for max_fail_percentage
+2020-03-03 14:15:10,267 p=12395 u=mark n=ansible |  12395 1583241310.26749: checking to see if all hosts have failed and the running result is not ok
+2020-03-03 14:15:10,267 p=12395 u=mark n=ansible |  12395 1583241310.26781: done checking to see if all hosts have failed
+2020-03-03 14:15:10,268 p=12395 u=mark n=ansible |  12395 1583241310.26804: getting the remaining hosts for this loop
+2020-03-03 14:15:10,268 p=12395 u=mark n=ansible |  12395 1583241310.26834: done getting the remaining hosts for this loop
+2020-03-03 14:15:10,268 p=12395 u=mark n=ansible |  12395 1583241310.26879: building list of next tasks for hosts
+2020-03-03 14:15:10,269 p=12395 u=mark n=ansible |  12395 1583241310.26905: getting the next task for host centos8
+2020-03-03 14:15:10,269 p=12395 u=mark n=ansible |  12395 1583241310.26949: done getting next task for host centos8
+2020-03-03 14:15:10,269 p=12395 u=mark n=ansible |  12395 1583241310.26982:  ^ task is: TASK: Show id stdout
+2020-03-03 14:15:10,270 p=12395 u=mark n=ansible |  12395 1583241310.27012:  ^ state is: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,270 p=12395 u=mark n=ansible |  12395 1583241310.27054: done building task lists
+2020-03-03 14:15:10,270 p=12395 u=mark n=ansible |  12395 1583241310.27078: counting tasks in each state of execution
+2020-03-03 14:15:10,271 p=12395 u=mark n=ansible |  12395 1583241310.27110: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-03-03 14:15:10,271 p=12395 u=mark n=ansible |  12395 1583241310.27144: advancing hosts in ITERATING_TASKS
+2020-03-03 14:15:10,272 p=12395 u=mark n=ansible |  12395 1583241310.27190: starting to advance hosts
+2020-03-03 14:15:10,272 p=12395 u=mark n=ansible |  12395 1583241310.27233: getting the next task for host centos8
+2020-03-03 14:15:10,272 p=12395 u=mark n=ansible |  12395 1583241310.27271: done getting next task for host centos8
+2020-03-03 14:15:10,273 p=12395 u=mark n=ansible |  12395 1583241310.27314:  ^ task is: TASK: Show id stdout
+2020-03-03 14:15:10,273 p=12395 u=mark n=ansible |  12395 1583241310.27350:  ^ state is: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,273 p=12395 u=mark n=ansible |  12395 1583241310.27380: done advancing hosts to next task
+2020-03-03 14:15:10,275 p=12395 u=mark n=ansible |  12395 1583241310.27504: Loading ActionModule 'debug' from /usr/lib/python3.6/site-packages/ansible/plugins/action/debug.py (searched paths: /usr/share/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action/__pycache__) (found_in_cache=False, class_only=True)
+2020-03-03 14:15:10,275 p=12395 u=mark n=ansible |  12395 1583241310.27566: getting variables
+2020-03-03 14:15:10,276 p=12395 u=mark n=ansible |  12395 1583241310.27604: in VariableManager get_vars()
+2020-03-03 14:15:10,277 p=12395 u=mark n=ansible |  12395 1583241310.27704: Calling all_inventory to load vars for centos8
+2020-03-03 14:15:10,277 p=12395 u=mark n=ansible |  12395 1583241310.27762: Calling groups_inventory to load vars for centos8
+2020-03-03 14:15:10,278 p=12395 u=mark n=ansible |  12395 1583241310.27801: Calling all_plugins_inventory to load vars for centos8
+2020-03-03 14:15:10,279 p=12395 u=mark n=ansible |  12395 1583241310.27918: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,280 p=12395 u=mark n=ansible |  12395 1583241310.27994: Calling all_plugins_play to load vars for centos8
+2020-03-03 14:15:10,280 p=12395 u=mark n=ansible |  12395 1583241310.28067: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,281 p=12395 u=mark n=ansible |  12395 1583241310.28114: Calling groups_plugins_inventory to load vars for centos8
+2020-03-03 14:15:10,282 p=12395 u=mark n=ansible |  12395 1583241310.28192: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,282 p=12395 u=mark n=ansible |  12395 1583241310.28253: Calling groups_plugins_play to load vars for centos8
+2020-03-03 14:15:10,283 p=12395 u=mark n=ansible |  12395 1583241310.28320: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,284 p=12395 u=mark n=ansible |  12395 1583241310.28425: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,285 p=12395 u=mark n=ansible |  12395 1583241310.28523: Loading VarsModule 'host_group_vars' from /usr/lib/python3.6/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,289 p=12395 u=mark n=ansible |  12395 1583241310.28887: done with get_vars()
+2020-03-03 14:15:10,289 p=12395 u=mark n=ansible |  12395 1583241310.28950: done getting variables
+2020-03-03 14:15:10,290 p=12395 u=mark n=ansible |  12395 1583241310.28988: sending task start callback, copying the task so we can template it temporarily
+2020-03-03 14:15:10,290 p=12395 u=mark n=ansible |  12395 1583241310.29015: done copying, going to template now
+2020-03-03 14:15:10,290 p=12395 u=mark n=ansible |  12395 1583241310.29054: done templating
+2020-03-03 14:15:10,290 p=12395 u=mark n=ansible |  12395 1583241310.29079: here goes the callback...
+2020-03-03 14:15:10,291 p=12395 u=mark n=ansible | TASK [Show id stdout] *******************************************************************************
+2020-03-03 14:15:10,291 p=12395 u=mark n=ansible | task path: /home/mark/git/ansible-sudo-bug/pipeline.yml:19
+2020-03-03 14:15:10,292 p=12395 u=mark n=ansible |  12395 1583241310.29192: sending task start callback
+2020-03-03 14:15:10,292 p=12395 u=mark n=ansible |  12395 1583241310.29219: entering _queue_task() for centos8/debug
+2020-03-03 14:15:10,292 p=12395 u=mark n=ansible |  12395 1583241310.29256: Creating lock for debug
+2020-03-03 14:15:10,296 p=12395 u=mark n=ansible |  12395 1583241310.29601: worker is 1 (out of 1 available)
+2020-03-03 14:15:10,297 p=12395 u=mark n=ansible |  12395 1583241310.29745: exiting _queue_task() for centos8/debug
+2020-03-03 14:15:10,298 p=12413 u=mark n=ansible |  12413 1583241310.29810: running TaskExecutor() for centos8/TASK: Show id stdout
+2020-03-03 14:15:10,298 p=12395 u=mark n=ansible |  12395 1583241310.29847: done queuing things up, now waiting for results queue to drain
+2020-03-03 14:15:10,298 p=12395 u=mark n=ansible |  12395 1583241310.29875: waiting for pending results...
+2020-03-03 14:15:10,299 p=12413 u=mark n=ansible |  12413 1583241310.29955: in run() - task 525400b2-cc5b-917c-1a09-00000000000f
+2020-03-03 14:15:10,300 p=12413 u=mark n=ansible |  12413 1583241310.30044: calling self._execute()
+2020-03-03 14:15:10,305 p=12413 u=mark n=ansible |  12413 1583241310.30476: trying /usr/share/ansible/plugins/connection
+2020-03-03 14:15:10,305 p=12413 u=mark n=ansible |  12413 1583241310.30545: trying /usr/lib/python3.6/site-packages/ansible/plugins/connection
+2020-03-03 14:15:10,307 p=12413 u=mark n=ansible |  12413 1583241310.30708: Loading Connection 'ssh' from /usr/lib/python3.6/site-packages/ansible/plugins/connection/ssh.py (searched paths: /usr/lib/python3.6/site-packages/ansible/plugins/connection:/usr/share/ansible/plugins/connection) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,307 p=12413 u=mark n=ansible |  12413 1583241310.30777: trying /usr/lib/python3.6/site-packages/ansible/plugins/shell
+2020-03-03 14:15:10,308 p=12413 u=mark n=ansible |  12413 1583241310.30841: Loading ShellModule 'sh' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,308 p=12413 u=mark n=ansible |  12413 1583241310.30880: Loading ShellModule 'sh' from /usr/lib/python3.6/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,312 p=12413 u=mark n=ansible |  12413 1583241310.31196: Loading ActionModule 'debug' from /usr/lib/python3.6/site-packages/ansible/plugins/action/debug.py (searched paths: /usr/share/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action:/usr/lib/python3.6/site-packages/ansible/plugins/action/__pycache__) (found_in_cache=True, class_only=False)
+2020-03-03 14:15:10,312 p=12413 u=mark n=ansible |  12413 1583241310.31255: starting attempt loop
+2020-03-03 14:15:10,313 p=12413 u=mark n=ansible |  12413 1583241310.31287: running the handler
+2020-03-03 14:15:10,341 p=12413 u=mark n=ansible |  12413 1583241310.34116: Loading FilterModule 'core' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/core.py
+2020-03-03 14:15:10,344 p=12413 u=mark n=ansible |  12413 1583241310.34395: Loading FilterModule 'gcp_kms_filters' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/gcp_kms_filters.py
+2020-03-03 14:15:10,345 p=12413 u=mark n=ansible |  12413 1583241310.34577: Loading FilterModule 'ipaddr' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/ipaddr.py
+2020-03-03 14:15:10,352 p=12413 u=mark n=ansible |  12413 1583241310.35180: Loading FilterModule 'json_query' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/json_query.py
+2020-03-03 14:15:10,353 p=12413 u=mark n=ansible |  12413 1583241310.35286: Loading FilterModule 'k8s' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/k8s.py
+2020-03-03 14:15:10,353 p=12413 u=mark n=ansible |  12413 1583241310.35374: Loading FilterModule 'mathstuff' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/mathstuff.py
+2020-03-03 14:15:10,355 p=12413 u=mark n=ansible |  12413 1583241310.35490: Loading FilterModule 'network' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/network.py
+2020-03-03 14:15:10,355 p=12413 u=mark n=ansible |  12413 1583241310.35565: Loading FilterModule 'urls' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/urls.py
+2020-03-03 14:15:10,356 p=12413 u=mark n=ansible |  12413 1583241310.35618: Loading FilterModule 'urlsplit' from /usr/lib/python3.6/site-packages/ansible/plugins/filter/urlsplit.py
+2020-03-03 14:15:10,359 p=12413 u=mark n=ansible |  12413 1583241310.35888: Loading TestModule 'core' from /usr/lib/python3.6/site-packages/ansible/plugins/test/core.py
+2020-03-03 14:15:10,359 p=12413 u=mark n=ansible |  12413 1583241310.35964: Loading TestModule 'files' from /usr/lib/python3.6/site-packages/ansible/plugins/test/files.py
+2020-03-03 14:15:10,360 p=12413 u=mark n=ansible |  12413 1583241310.36020: Loading TestModule 'mathstuff' from /usr/lib/python3.6/site-packages/ansible/plugins/test/mathstuff.py
+2020-03-03 14:15:10,363 p=12413 u=mark n=ansible |  12413 1583241310.36315: handler run complete
+2020-03-03 14:15:10,363 p=12413 u=mark n=ansible |  12413 1583241310.36362: attempt loop complete, returning result
+2020-03-03 14:15:10,363 p=12413 u=mark n=ansible |  12413 1583241310.36385: _execute() done
+2020-03-03 14:15:10,364 p=12413 u=mark n=ansible |  12413 1583241310.36406: dumping result to json
+2020-03-03 14:15:10,364 p=12413 u=mark n=ansible |  12413 1583241310.36427: done dumping result, returning
+2020-03-03 14:15:10,364 p=12413 u=mark n=ansible |  12413 1583241310.36462: done running TaskExecutor() for centos8/TASK: Show id stdout [525400b2-cc5b-917c-1a09-00000000000f]
+2020-03-03 14:15:10,365 p=12413 u=mark n=ansible |  12413 1583241310.36501: sending task result for task 525400b2-cc5b-917c-1a09-00000000000f
+2020-03-03 14:15:10,366 p=12413 u=mark n=ansible |  12413 1583241310.36587: done sending task result for task 525400b2-cc5b-917c-1a09-00000000000f
+2020-03-03 14:15:10,366 p=12413 u=mark n=ansible |  12413 1583241310.36620: WORKER PROCESS EXITING
+2020-03-03 14:15:10,369 p=12395 u=mark n=ansible | ok: [centos8] => {
+    "id_result.stdout": "uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+}
+2020-03-03 14:15:10,370 p=12395 u=mark n=ansible |  12395 1583241310.37015: no more pending results, returning what we have
+2020-03-03 14:15:10,370 p=12395 u=mark n=ansible |  12395 1583241310.37051: results queue empty
+2020-03-03 14:15:10,371 p=12395 u=mark n=ansible |  12395 1583241310.37079: checking for any_errors_fatal
+2020-03-03 14:15:10,371 p=12395 u=mark n=ansible |  12395 1583241310.37118: done checking for any_errors_fatal
+2020-03-03 14:15:10,371 p=12395 u=mark n=ansible |  12395 1583241310.37151: checking for max_fail_percentage
+2020-03-03 14:15:10,372 p=12395 u=mark n=ansible |  12395 1583241310.37194: done checking for max_fail_percentage
+2020-03-03 14:15:10,372 p=12395 u=mark n=ansible |  12395 1583241310.37218: checking to see if all hosts have failed and the running result is not ok
+2020-03-03 14:15:10,372 p=12395 u=mark n=ansible |  12395 1583241310.37259: done checking to see if all hosts have failed
+2020-03-03 14:15:10,373 p=12395 u=mark n=ansible |  12395 1583241310.37287: getting the remaining hosts for this loop
+2020-03-03 14:15:10,373 p=12395 u=mark n=ansible |  12395 1583241310.37323: done getting the remaining hosts for this loop
+2020-03-03 14:15:10,373 p=12395 u=mark n=ansible |  12395 1583241310.37377: building list of next tasks for hosts
+2020-03-03 14:15:10,374 p=12395 u=mark n=ansible |  12395 1583241310.37403: getting the next task for host centos8
+2020-03-03 14:15:10,374 p=12395 u=mark n=ansible |  12395 1583241310.37450: done getting next task for host centos8
+2020-03-03 14:15:10,374 p=12395 u=mark n=ansible |  12395 1583241310.37480:  ^ task is: TASK: meta (flush_handlers)
+2020-03-03 14:15:10,375 p=12395 u=mark n=ansible |  12395 1583241310.37509:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,375 p=12395 u=mark n=ansible |  12395 1583241310.37548: done building task lists
+2020-03-03 14:15:10,375 p=12395 u=mark n=ansible |  12395 1583241310.37571: counting tasks in each state of execution
+2020-03-03 14:15:10,376 p=12395 u=mark n=ansible |  12395 1583241310.37604: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-03-03 14:15:10,376 p=12395 u=mark n=ansible |  12395 1583241310.37634: advancing hosts in ITERATING_TASKS
+2020-03-03 14:15:10,376 p=12395 u=mark n=ansible |  12395 1583241310.37670: starting to advance hosts
+2020-03-03 14:15:10,377 p=12395 u=mark n=ansible |  12395 1583241310.37697: getting the next task for host centos8
+2020-03-03 14:15:10,377 p=12395 u=mark n=ansible |  12395 1583241310.37740: done getting next task for host centos8
+2020-03-03 14:15:10,377 p=12395 u=mark n=ansible |  12395 1583241310.37767:  ^ task is: TASK: meta (flush_handlers)
+2020-03-03 14:15:10,378 p=12395 u=mark n=ansible |  12395 1583241310.37801:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,378 p=12395 u=mark n=ansible |  12395 1583241310.37831: done advancing hosts to next task
+2020-03-03 14:15:10,379 p=12395 u=mark n=ansible | META: ran handlers
+2020-03-03 14:15:10,379 p=12395 u=mark n=ansible |  12395 1583241310.37932: done queuing things up, now waiting for results queue to drain
+2020-03-03 14:15:10,379 p=12395 u=mark n=ansible |  12395 1583241310.37973: results queue empty
+2020-03-03 14:15:10,380 p=12395 u=mark n=ansible |  12395 1583241310.38000: checking for any_errors_fatal
+2020-03-03 14:15:10,380 p=12395 u=mark n=ansible |  12395 1583241310.38047: done checking for any_errors_fatal
+2020-03-03 14:15:10,380 p=12395 u=mark n=ansible |  12395 1583241310.38071: checking for max_fail_percentage
+2020-03-03 14:15:10,381 p=12395 u=mark n=ansible |  12395 1583241310.38099: done checking for max_fail_percentage
+2020-03-03 14:15:10,381 p=12395 u=mark n=ansible |  12395 1583241310.38149: checking to see if all hosts have failed and the running result is not ok
+2020-03-03 14:15:10,382 p=12395 u=mark n=ansible |  12395 1583241310.38183: done checking to see if all hosts have failed
+2020-03-03 14:15:10,382 p=12395 u=mark n=ansible |  12395 1583241310.38209: getting the remaining hosts for this loop
+2020-03-03 14:15:10,382 p=12395 u=mark n=ansible |  12395 1583241310.38249: done getting the remaining hosts for this loop
+2020-03-03 14:15:10,383 p=12395 u=mark n=ansible |  12395 1583241310.38292: building list of next tasks for hosts
+2020-03-03 14:15:10,383 p=12395 u=mark n=ansible |  12395 1583241310.38317: getting the next task for host centos8
+2020-03-03 14:15:10,383 p=12395 u=mark n=ansible |  12395 1583241310.38355: done getting next task for host centos8
+2020-03-03 14:15:10,384 p=12395 u=mark n=ansible |  12395 1583241310.38387:  ^ task is: TASK: meta (flush_handlers)
+2020-03-03 14:15:10,384 p=12395 u=mark n=ansible |  12395 1583241310.38416:  ^ state is: HOST STATE: block=4, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,384 p=12395 u=mark n=ansible |  12395 1583241310.38454: done building task lists
+2020-03-03 14:15:10,384 p=12395 u=mark n=ansible |  12395 1583241310.38478: counting tasks in each state of execution
+2020-03-03 14:15:10,385 p=12395 u=mark n=ansible |  12395 1583241310.38510: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-03-03 14:15:10,385 p=12395 u=mark n=ansible |  12395 1583241310.38543: advancing hosts in ITERATING_TASKS
+2020-03-03 14:15:10,385 p=12395 u=mark n=ansible |  12395 1583241310.38572: starting to advance hosts
+2020-03-03 14:15:10,386 p=12395 u=mark n=ansible |  12395 1583241310.38599: getting the next task for host centos8
+2020-03-03 14:15:10,386 p=12395 u=mark n=ansible |  12395 1583241310.38632: done getting next task for host centos8
+2020-03-03 14:15:10,386 p=12395 u=mark n=ansible |  12395 1583241310.38668:  ^ task is: TASK: meta (flush_handlers)
+2020-03-03 14:15:10,387 p=12395 u=mark n=ansible |  12395 1583241310.38700:  ^ state is: HOST STATE: block=4, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,387 p=12395 u=mark n=ansible |  12395 1583241310.38727: done advancing hosts to next task
+2020-03-03 14:15:10,387 p=12395 u=mark n=ansible | META: ran handlers
+2020-03-03 14:15:10,388 p=12395 u=mark n=ansible |  12395 1583241310.38813: done queuing things up, now waiting for results queue to drain
+2020-03-03 14:15:10,388 p=12395 u=mark n=ansible |  12395 1583241310.38853: results queue empty
+2020-03-03 14:15:10,388 p=12395 u=mark n=ansible |  12395 1583241310.38879: checking for any_errors_fatal
+2020-03-03 14:15:10,389 p=12395 u=mark n=ansible |  12395 1583241310.38913: done checking for any_errors_fatal
+2020-03-03 14:15:10,389 p=12395 u=mark n=ansible |  12395 1583241310.38952: checking for max_fail_percentage
+2020-03-03 14:15:10,390 p=12395 u=mark n=ansible |  12395 1583241310.38985: done checking for max_fail_percentage
+2020-03-03 14:15:10,390 p=12395 u=mark n=ansible |  12395 1583241310.39013: checking to see if all hosts have failed and the running result is not ok
+2020-03-03 14:15:10,390 p=12395 u=mark n=ansible |  12395 1583241310.39052: done checking to see if all hosts have failed
+2020-03-03 14:15:10,390 p=12395 u=mark n=ansible |  12395 1583241310.39076: getting the remaining hosts for this loop
+2020-03-03 14:15:10,391 p=12395 u=mark n=ansible |  12395 1583241310.39105: done getting the remaining hosts for this loop
+2020-03-03 14:15:10,391 p=12395 u=mark n=ansible |  12395 1583241310.39138: building list of next tasks for hosts
+2020-03-03 14:15:10,391 p=12395 u=mark n=ansible |  12395 1583241310.39162: getting the next task for host centos8
+2020-03-03 14:15:10,391 p=12395 u=mark n=ansible |  12395 1583241310.39184: done getting next task for host centos8
+2020-03-03 14:15:10,392 p=12395 u=mark n=ansible |  12395 1583241310.39202:  ^ task is: None
+2020-03-03 14:15:10,392 p=12395 u=mark n=ansible |  12395 1583241310.39220:  ^ state is: HOST STATE: block=5, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,392 p=12395 u=mark n=ansible |  12395 1583241310.39244: done building task lists
+2020-03-03 14:15:10,392 p=12395 u=mark n=ansible |  12395 1583241310.39260: counting tasks in each state of execution
+2020-03-03 14:15:10,392 p=12395 u=mark n=ansible |  12395 1583241310.39278: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+2020-03-03 14:15:10,392 p=12395 u=mark n=ansible |  12395 1583241310.39293: all hosts are done, so returning None's for all hosts
+2020-03-03 14:15:10,393 p=12395 u=mark n=ansible |  12395 1583241310.39310: done queuing things up, now waiting for results queue to drain
+2020-03-03 14:15:10,393 p=12395 u=mark n=ansible |  12395 1583241310.39330: results queue empty
+2020-03-03 14:15:10,393 p=12395 u=mark n=ansible |  12395 1583241310.39350: checking for any_errors_fatal
+2020-03-03 14:15:10,393 p=12395 u=mark n=ansible |  12395 1583241310.39366: done checking for any_errors_fatal
+2020-03-03 14:15:10,393 p=12395 u=mark n=ansible |  12395 1583241310.39378: checking for max_fail_percentage
+2020-03-03 14:15:10,393 p=12395 u=mark n=ansible |  12395 1583241310.39393: done checking for max_fail_percentage
+2020-03-03 14:15:10,394 p=12395 u=mark n=ansible |  12395 1583241310.39408: checking to see if all hosts have failed and the running result is not ok
+2020-03-03 14:15:10,394 p=12395 u=mark n=ansible |  12395 1583241310.39425: done checking to see if all hosts have failed
+2020-03-03 14:15:10,394 p=12395 u=mark n=ansible |  12395 1583241310.39448: getting the next task for host centos8
+2020-03-03 14:15:10,394 p=12395 u=mark n=ansible |  12395 1583241310.39467: done getting next task for host centos8
+2020-03-03 14:15:10,394 p=12395 u=mark n=ansible |  12395 1583241310.39480:  ^ task is: None
+2020-03-03 14:15:10,395 p=12395 u=mark n=ansible |  12395 1583241310.39494:  ^ state is: HOST STATE: block=5, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-03-03 14:15:10,395 p=12395 u=mark n=ansible |  12395 1583241310.39510: running handlers
+2020-03-03 14:15:10,396 p=12395 u=mark n=ansible | PLAY RECAP ******************************************************************************************
+2020-03-03 14:15:10,396 p=12395 u=mark n=ansible | centos8                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-03-03 14:15:10,397 p=12395 u=mark n=ansible |  12395 1583241310.39696: RUNNING CLEANUP

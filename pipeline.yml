@@ -1,0 +1,21 @@
+# Test sudo bug
+#
+# vim:sw=2:sts=2:et
+---
+- name: 'Test sudo bug'
+  gather_facts: no
+  hosts: testservers
+  user: sudoall
+  become_method: sudo
+  become_user: root
+  vars:
+    ansible_ssh_pipelining: yes
+  tasks:
+    - name: 'Run id'
+      command: id
+      become: yes
+      register: id_result
+
+    - name: 'Show id stdout'
+      debug:
+        var: id_result.stdout

@@ -1,0 +1,8 @@
+[testservers]
+centos8
+centos7
+rhel8
+fedora31
+debian
+ubuntu16-04
+ubuntu18-04
