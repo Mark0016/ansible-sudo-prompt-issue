@@ -1,6 +1,15 @@
 Sudo prompt timeout on redhat hosts only 
 ========================================
 
+**This was not an isssue with ansible**
+The problem was some script in `/etc/profile.d` throwing terminal escape sequences to the stdout which ansible dindn't handle well. This maybe could be fixed on the side of ansible but is probably not needed since such script should only run on the condition that the stdout is a terminal (and in my case if it is a serial console).
+After adding that condition everything works fine again.
+
+The bug report that I submited about this is https://github.com/ansible/ansible/issues/67969, which I have closed.
+
+I will also move this repo to archive.
+
+
 Description
 -----------
 
